@@ -1,0 +1,614 @@
+[
+    {
+        "id": "female_underweight_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "underweight",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Female, Underweight): 1) String hoppers (3–4) + dhal + pol sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g) 2) Oats with milk + banana + peanuts (Approx. Oats: ~50g (dry); Milk: ~200ml; Banana: ~100g; Peanuts: ~30g) 3) Kiribath (small plate) + egg (Approx. Kiribath: ~100g piece; Egg: ~50g) 4) Pittu + coconut milk + banana (Approx. Pittu: ~100g piece; Milk: ~200ml; Banana: ~100g) 5) Whole wheat bread (2–3) + omelette (Approx. Bread: ~30g slice; Omelette: ~60g) 6) Chickpea curry + roti (2) (Approx. Chickpea: ~150g; Roti: ~60g each) 7) Kola kanda + boiled egg + a fruit (Approx. Kola kanda: ~200ml; Egg: ~50g; Fruit: ~100g) 8) Hoppers (3) + egg + sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g) 9) Sweet potato/manioc + coconut sambol + curd (Approx. Sweet potato: ~150g; Manioc: ~150g; Sambol: ~30g; Curd: ~150g) 10) Yogurt/curd + banana + a handful of nuts (Approx. Yogurt: ~125g; Curd: ~150g; Banana: ~100g; Nuts: ~30g) 11) Mung bean (green gram) milk rice + lunu miris (Approx. Green gram: ~150g; Mung bean: ~150g; Rice: ~200g; Milk: ~200ml) 12) Roast paan (2) + pol sambol + dhal (Approx. Paan: ~30g slice; Sambol: ~30g; Dhal: ~100g) 13) Rice flour roti (2) + fish curry (Approx. Rice: ~200g; Roti: ~60g each; Fish: ~100g) 14) Semolina (Rulang) upma with vegetables + egg (Approx. Vegetable: ~100g; Egg: ~50g) 15) Sweet potato porridge (no sugar) + boiled egg (Approx. Sweet potato: ~150g; Egg: ~50g)",
+        "options": [
+            "String hoppers (3–4) + dhal + pol sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g)",
+            "Oats with milk + banana + peanuts (Approx. Oats: ~50g (dry); Milk: ~200ml; Banana: ~100g; Peanuts: ~30g)",
+            "Kiribath (small plate) + egg (Approx. Kiribath: ~100g piece; Egg: ~50g)",
+            "Pittu + coconut milk + banana (Approx. Pittu: ~100g piece; Milk: ~200ml; Banana: ~100g)",
+            "Whole wheat bread (2–3) + omelette (Approx. Bread: ~30g slice; Omelette: ~60g)",
+            "Chickpea curry + roti (2) (Approx. Chickpea: ~150g; Roti: ~60g each)",
+            "Kola kanda + boiled egg + a fruit (Approx. Kola kanda: ~200ml; Egg: ~50g; Fruit: ~100g)",
+            "Hoppers (3) + egg + sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g)",
+            "Sweet potato/manioc + coconut sambol + curd (Approx. Sweet potato: ~150g; Manioc: ~150g; Sambol: ~30g; Curd: ~150g)",
+            "Yogurt/curd + banana + a handful of nuts (Approx. Yogurt: ~125g; Curd: ~150g; Banana: ~100g; Nuts: ~30g)",
+            "Mung bean (green gram) milk rice + lunu miris (Approx. Green gram: ~150g; Mung bean: ~150g; Rice: ~200g; Milk: ~200ml)",
+            "Roast paan (2) + pol sambol + dhal (Approx. Paan: ~30g slice; Sambol: ~30g; Dhal: ~100g)",
+            "Rice flour roti (2) + fish curry (Approx. Rice: ~200g; Roti: ~60g each; Fish: ~100g)",
+            "Semolina (Rulang) upma with vegetables + egg (Approx. Vegetable: ~100g; Egg: ~50g)",
+            "Sweet potato porridge (no sugar) + boiled egg (Approx. Sweet potato: ~150g; Egg: ~50g)"
+        ]
+    },
+    {
+        "id": "female_underweight_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "underweight",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Female, Underweight): 1) Rice (1.5 cups) + dhal + fish + 1 veg (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Veg: ~100g) 2) Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 3) Rice + egg curry + mallung + 1 veg (Approx. Rice: ~200g; Egg: ~50g; Mallung: ~30g; Veg: ~100g) 4) Rice + sprats (haalmasso) curry + dhal + salad (Approx. Rice: ~200g; Dhal: ~100g; Salad: ~100g) 5) Rice + jackfruit curry + dhal + egg (Approx. Rice: ~200g; Fruit: ~100g; Dhal: ~100g; Egg: ~50g) 6) Rice + cuttlefish/prawn curry + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 7) Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g) 8) Rice + fish ambul thiyal + gotukola sambol + dhal (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Dhal: ~100g) 9) Rice + beef curry (if used) + 2 veg (Approx. Rice: ~200g; Beef: ~100g; Veg: ~100g) 10) Rice + lentil (parippu) + potato curry + salad + curd (Approx. Rice: ~200g; Salad: ~100g; Curd: ~150g) 11) Rice + crab curry + murunga leaves + dhal (Approx. Rice: ~200g; Dhal: ~100g) 12) Rice + fried fish + beetroot curry + salad (Approx. Rice: ~200g; Fish: ~100g; Beetroot: ~100g; Salad: ~100g) 13) Rice + cashew curry + beans + egg (Approx. Rice: ~200g; Beans: ~100g; Egg: ~50g) 14) Rice + canned fish curry + gotukola + pumpkin (Approx. Rice: ~200g; Fish: ~100g; Pumpkin: ~100g) 15) Rice + soya meat + brinjal moju + dhal (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g)",
+        "options": [
+            "Rice (1.5 cups) + dhal + fish + 1 veg (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Veg: ~100g)",
+            "Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice + egg curry + mallung + 1 veg (Approx. Rice: ~200g; Egg: ~50g; Mallung: ~30g; Veg: ~100g)",
+            "Rice + sprats (haalmasso) curry + dhal + salad (Approx. Rice: ~200g; Dhal: ~100g; Salad: ~100g)",
+            "Rice + jackfruit curry + dhal + egg (Approx. Rice: ~200g; Fruit: ~100g; Dhal: ~100g; Egg: ~50g)",
+            "Rice + cuttlefish/prawn curry + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g)",
+            "Rice + fish ambul thiyal + gotukola sambol + dhal (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Dhal: ~100g)",
+            "Rice + beef curry (if used) + 2 veg (Approx. Rice: ~200g; Beef: ~100g; Veg: ~100g)",
+            "Rice + lentil (parippu) + potato curry + salad + curd (Approx. Rice: ~200g; Salad: ~100g; Curd: ~150g)",
+            "Rice + crab curry + murunga leaves + dhal (Approx. Rice: ~200g; Dhal: ~100g)",
+            "Rice + fried fish + beetroot curry + salad (Approx. Rice: ~200g; Fish: ~100g; Beetroot: ~100g; Salad: ~100g)",
+            "Rice + cashew curry + beans + egg (Approx. Rice: ~200g; Beans: ~100g; Egg: ~50g)",
+            "Rice + canned fish curry + gotukola + pumpkin (Approx. Rice: ~200g; Fish: ~100g; Pumpkin: ~100g)",
+            "Rice + soya meat + brinjal moju + dhal (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g)"
+        ]
+    },
+    {
+        "id": "female_underweight_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "underweight",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Female, Underweight): 1) Pittu + fish curry + gotukola sambol (Approx. Pittu: ~100g piece; Fish: ~100g; Sambol: ~30g) 2) Rice (1 cup) + egg + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g) 3) String hoppers (3) + dhal + chicken/fish curry (Approx. String hoppers: ~30g each; Dhal: ~100g; Chicken: ~100g; Fish: ~100g) 4) Vegetable soup + bread (2) + cheese/egg (Approx. Vegetable: ~100g; Bread: ~30g slice; Egg: ~50g) 5) Roti (2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g) 6) Noodles (home-made) + egg + vegetables (Approx. Egg: ~50g; Vegetable: ~100g) 7) Thosai (2–3) + sambar + egg (Approx. Thosai: ~80g each; Egg: ~50g) 8) Boiled manioc/sweet potato + fish curry + sambol (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g; Sambol: ~30g) 9) Milk rice (small) + katta sambol + egg (Approx. Rice: ~200g; Milk: ~200ml; Sambol: ~30g; Egg: ~50g) 10) Rice + dhal + fish + mallung (smaller portion than lunch) (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Mallung: ~30g) 11) String hoppers (4) + kiri hodi + pol sambol (Approx. String hoppers: ~30g each; Sambol: ~30g) 12) Egg roti (1) + plain roti (1) + dhal (Approx. Roti: ~60g each; Egg: ~50g; Dhal: ~100g) 13) Macaroni with cheese and vegetables (Approx. Vegetable: ~100g) 14) Paratha (1) + chicken curry + salad (Approx. Chicken: ~100g; Salad: ~100g) 15) Soup (chicken/corn) + toast (2) + butter (Approx. Chicken: ~100g)",
+        "options": [
+            "Pittu + fish curry + gotukola sambol (Approx. Pittu: ~100g piece; Fish: ~100g; Sambol: ~30g)",
+            "Rice (1 cup) + egg + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g)",
+            "String hoppers (3) + dhal + chicken/fish curry (Approx. String hoppers: ~30g each; Dhal: ~100g; Chicken: ~100g; Fish: ~100g)",
+            "Vegetable soup + bread (2) + cheese/egg (Approx. Vegetable: ~100g; Bread: ~30g slice; Egg: ~50g)",
+            "Roti (2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g)",
+            "Noodles (home-made) + egg + vegetables (Approx. Egg: ~50g; Vegetable: ~100g)",
+            "Thosai (2–3) + sambar + egg (Approx. Thosai: ~80g each; Egg: ~50g)",
+            "Boiled manioc/sweet potato + fish curry + sambol (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g; Sambol: ~30g)",
+            "Milk rice (small) + katta sambol + egg (Approx. Rice: ~200g; Milk: ~200ml; Sambol: ~30g; Egg: ~50g)",
+            "Rice + dhal + fish + mallung (smaller portion than lunch) (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Mallung: ~30g)",
+            "String hoppers (4) + kiri hodi + pol sambol (Approx. String hoppers: ~30g each; Sambol: ~30g)",
+            "Egg roti (1) + plain roti (1) + dhal (Approx. Roti: ~60g each; Egg: ~50g; Dhal: ~100g)",
+            "Macaroni with cheese and vegetables (Approx. Vegetable: ~100g)",
+            "Paratha (1) + chicken curry + salad (Approx. Chicken: ~100g; Salad: ~100g)",
+            "Soup (chicken/corn) + toast (2) + butter (Approx. Chicken: ~100g)"
+        ]
+    },
+    {
+        "id": "female_normal_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "normal",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Female, Normal): 1) String hoppers (2–3) + dhal + sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g) 2) Kurakkan roti (2) + lunu miris (Approx. Roti: ~60g each) 3) Oats + fruit (banana/papaya) (Approx. Oats: ~50g (dry); Banana: ~100g; Papaya: ~100g; Fruit: ~100g) 4) Hoppers (2–3) + egg (Approx. Hoppers: ~50g each; Egg: ~50g) 5) Kola kanda + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g) 6) Bread (2) + omelette + tomato/onion (Approx. Bread: ~30g slice; Omelette: ~60g) 7) Chickpeas/green gram + coconut + tea (no sugar) (Approx. Green gram: ~150g; Chickpea: ~150g; Tea: ~200ml) 8) Thosai (2) + sambar (Approx. Thosai: ~80g each) 9) Boiled sweet potato + curd (Approx. Sweet potato: ~150g; Curd: ~150g) 10) Rice flakes (aval) + milk + banana (moderate portion) (Approx. Rice: ~200g; Milk: ~200ml; Banana: ~100g) 11) Pol roti (2) + katta sambol (Approx. Roti: ~60g each; Sambol: ~30g) 12) Red rice (1 cup) + pol sambol + dhal (Approx. Rice: ~200g; Sambol: ~30g; Dhal: ~100g) 13) Manioc (boiled) + lunu miris + coconut (Approx. Manioc: ~150g) 14) Bread (2) + seeni sambol + egg (Approx. Bread: ~30g slice; Sambol: ~30g; Egg: ~50g) 15) Noodles with carrots/leeks + egg (Approx. Carrot: ~100g; Egg: ~50g)",
+        "options": [
+            "String hoppers (2–3) + dhal + sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g)",
+            "Kurakkan roti (2) + lunu miris (Approx. Roti: ~60g each)",
+            "Oats + fruit (banana/papaya) (Approx. Oats: ~50g (dry); Banana: ~100g; Papaya: ~100g; Fruit: ~100g)",
+            "Hoppers (2–3) + egg (Approx. Hoppers: ~50g each; Egg: ~50g)",
+            "Kola kanda + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Bread (2) + omelette + tomato/onion (Approx. Bread: ~30g slice; Omelette: ~60g)",
+            "Chickpeas/green gram + coconut + tea (no sugar) (Approx. Green gram: ~150g; Chickpea: ~150g; Tea: ~200ml)",
+            "Thosai (2) + sambar (Approx. Thosai: ~80g each)",
+            "Boiled sweet potato + curd (Approx. Sweet potato: ~150g; Curd: ~150g)",
+            "Rice flakes (aval) + milk + banana (moderate portion) (Approx. Rice: ~200g; Milk: ~200ml; Banana: ~100g)",
+            "Pol roti (2) + katta sambol (Approx. Roti: ~60g each; Sambol: ~30g)",
+            "Red rice (1 cup) + pol sambol + dhal (Approx. Rice: ~200g; Sambol: ~30g; Dhal: ~100g)",
+            "Manioc (boiled) + lunu miris + coconut (Approx. Manioc: ~150g)",
+            "Bread (2) + seeni sambol + egg (Approx. Bread: ~30g slice; Sambol: ~30g; Egg: ~50g)",
+            "Noodles with carrots/leeks + egg (Approx. Carrot: ~100g; Egg: ~50g)"
+        ]
+    },
+    {
+        "id": "female_normal_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "normal",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Female, Normal): 1) Rice (1 cup) + fish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 2) Rice + dhal + mallung + egg (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Egg: ~50g) 3) Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 4) Rice + fish ambul thiyal + salad + dhal (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Dhal: ~100g) 5) Rice + sprats curry + 2 veg (Approx. Rice: ~200g; Veg: ~100g) 6) Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g) 7) Rice + egg curry + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g) 8) Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 9) Rice + dhal + potato curry + salad (Approx. Rice: ~200g; Dhal: ~100g; Salad: ~100g) 10) Rice + grilled fish + large salad (light lunch option) (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g) 11) Rice + mackerel curry + cucumber salad + dhal (Approx. Rice: ~200g; Salad: ~100g; Dhal: ~100g) 12) Rice + mushroom curry + beans + egg (Approx. Rice: ~200g; Beans: ~100g; Egg: ~50g) 13) Rice + fried egg + pol sambol + dhal (Approx. Rice: ~200g; Egg: ~50g; Sambol: ~30g; Dhal: ~100g) 14) Rice + bitter gourd (karawila) + chicken + dhal (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g) 15) Rice + pumpkin curry + spinach + fish (Approx. Rice: ~200g; Pumpkin: ~100g; Fish: ~100g)",
+        "options": [
+            "Rice (1 cup) + fish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + dhal + mallung + egg (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Egg: ~50g)",
+            "Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice + fish ambul thiyal + salad + dhal (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Dhal: ~100g)",
+            "Rice + sprats curry + 2 veg (Approx. Rice: ~200g; Veg: ~100g)",
+            "Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g)",
+            "Rice + egg curry + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g)",
+            "Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + dhal + potato curry + salad (Approx. Rice: ~200g; Dhal: ~100g; Salad: ~100g)",
+            "Rice + grilled fish + large salad (light lunch option) (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g)",
+            "Rice + mackerel curry + cucumber salad + dhal (Approx. Rice: ~200g; Salad: ~100g; Dhal: ~100g)",
+            "Rice + mushroom curry + beans + egg (Approx. Rice: ~200g; Beans: ~100g; Egg: ~50g)",
+            "Rice + fried egg + pol sambol + dhal (Approx. Rice: ~200g; Egg: ~50g; Sambol: ~30g; Dhal: ~100g)",
+            "Rice + bitter gourd (karawila) + chicken + dhal (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g)",
+            "Rice + pumpkin curry + spinach + fish (Approx. Rice: ~200g; Pumpkin: ~100g; Fish: ~100g)"
+        ]
+    },
+    {
+        "id": "female_normal_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "normal",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Female, Normal): 1) Vegetable soup + bread (1–2) (Approx. Vegetable: ~100g; Bread: ~30g slice) 2) String hoppers (2) + dhal + veg curry (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g) 3) Rice (small) + 2 veg + dhal (Approx. Rice: ~200g; Veg: ~100g; Dhal: ~100g) 4) Salad + egg + small portion of rice/roti (Approx. Salad: ~100g; Egg: ~50g; Rice: ~200g; Roti: ~60g each) 5) Thosai (2) + sambar (Approx. Thosai: ~80g each) 6) Roti (1–2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g) 7) Pittu (small) + veg + fish/egg (Approx. Pittu: ~100g piece; Veg: ~100g; Fish: ~100g; Egg: ~50g) 8) Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g) 9) Boiled vegetables + dhal + curd (Approx. Vegetable: ~100g; Dhal: ~100g; Curd: ~150g) 10) Omelette + salad + a fruit (Approx. Omelette: ~60g; Salad: ~100g; Fruit: ~100g) 11) Hoppers (2) + egg hopper (1) + lunu miris (Approx. Hoppers: ~50g each; Hopper: ~50g each; Egg: ~50g) 12) Kurakkan roti (1) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g) 13) Vegetable fried rice (small) + chili paste (Approx. Vegetable: ~100g; Rice: ~200g) 14) Soup (vegetable) + toast (1) + egg (Approx. Vegetable: ~100g; Egg: ~50g) 15) Boiled corn + coconut + lunu miris",
+        "options": [
+            "Vegetable soup + bread (1–2) (Approx. Vegetable: ~100g; Bread: ~30g slice)",
+            "String hoppers (2) + dhal + veg curry (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g)",
+            "Rice (small) + 2 veg + dhal (Approx. Rice: ~200g; Veg: ~100g; Dhal: ~100g)",
+            "Salad + egg + small portion of rice/roti (Approx. Salad: ~100g; Egg: ~50g; Rice: ~200g; Roti: ~60g each)",
+            "Thosai (2) + sambar (Approx. Thosai: ~80g each)",
+            "Roti (1–2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g)",
+            "Pittu (small) + veg + fish/egg (Approx. Pittu: ~100g piece; Veg: ~100g; Fish: ~100g; Egg: ~50g)",
+            "Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g)",
+            "Boiled vegetables + dhal + curd (Approx. Vegetable: ~100g; Dhal: ~100g; Curd: ~150g)",
+            "Omelette + salad + a fruit (Approx. Omelette: ~60g; Salad: ~100g; Fruit: ~100g)",
+            "Hoppers (2) + egg hopper (1) + lunu miris (Approx. Hoppers: ~50g each; Hopper: ~50g each; Egg: ~50g)",
+            "Kurakkan roti (1) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g)",
+            "Vegetable fried rice (small) + chili paste (Approx. Vegetable: ~100g; Rice: ~200g)",
+            "Soup (vegetable) + toast (1) + egg (Approx. Vegetable: ~100g; Egg: ~50g)",
+            "Boiled corn + coconut + lunu miris"
+        ]
+    },
+    {
+        "id": "female_overweight_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "overweight",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Female, Overweight): 1) Oats with water + cinnamon + small fruit (Approx. Oats: ~50g (dry); Fruit: ~100g) 2) Boiled gram/green gram + cucumber (Approx. Green gram: ~150g) 3) String hoppers (1–2) + dhal (no extra coconut milk) (Approx. String hoppers: ~30g each; Dhal: ~100g; Milk: ~200ml) 4) Kola kanda (no sugar) + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g) 5) Thosai (1–2) + sambar (Approx. Thosai: ~80g each) 6) Plain yogurt/curd + papaya (Approx. Yogurt: ~125g; Curd: ~150g; Papaya: ~100g) 7) Vegetable omelette + salad (Approx. Vegetable: ~100g; Omelette: ~60g; Salad: ~100g) 8) Chickpeas + onion + lime (Approx. Chickpea: ~150g) 9) Boiled sweet potato (small) + sambol (Approx. Sweet potato: ~150g; Sambol: ~30g) 10) Smoothie: curd + banana (small) + cinnamon (no sugar) (Approx. Curd: ~150g; Banana: ~100g) 11) Red rice string hoppers (2) + sothi (light) (Approx. String hoppers: ~30g each; Rice: ~200g) 12) Bran crackers (3) + cheese wedge + tea (Approx. Tea: ~200ml) 13) Papaya slices + boiled egg (Approx. Papaya: ~100g; Egg: ~50g) 14) Oats porridge (savory) with veggies (Approx. Oats: ~50g (dry); Veg: ~100g; Egg: ~50g) 15) Kurakkan pittu (small piece) + coconut milk (light) (Approx. Pittu: ~100g piece; Milk: ~200ml)",
+        "options": [
+            "Oats with water + cinnamon + small fruit (Approx. Oats: ~50g (dry); Fruit: ~100g)",
+            "Boiled gram/green gram + cucumber (Approx. Green gram: ~150g)",
+            "String hoppers (1–2) + dhal (no extra coconut milk) (Approx. String hoppers: ~30g each; Dhal: ~100g; Milk: ~200ml)",
+            "Kola kanda (no sugar) + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Thosai (1–2) + sambar (Approx. Thosai: ~80g each)",
+            "Plain yogurt/curd + papaya (Approx. Yogurt: ~125g; Curd: ~150g; Papaya: ~100g)",
+            "Vegetable omelette + salad (Approx. Vegetable: ~100g; Omelette: ~60g; Salad: ~100g)",
+            "Chickpeas + onion + lime (Approx. Chickpea: ~150g)",
+            "Boiled sweet potato (small) + sambol (Approx. Sweet potato: ~150g; Sambol: ~30g)",
+            "Smoothie: curd + banana (small) + cinnamon (no sugar) (Approx. Curd: ~150g; Banana: ~100g)",
+            "Red rice string hoppers (2) + sothi (light) (Approx. String hoppers: ~30g each; Rice: ~200g)",
+            "Bran crackers (3) + cheese wedge + tea (Approx. Tea: ~200ml)",
+            "Papaya slices + boiled egg (Approx. Papaya: ~100g; Egg: ~50g)",
+            "Oats porridge (savory) with veggies (Approx. Oats: ~50g (dry); Veg: ~100g; Egg: ~50g)",
+            "Kurakkan pittu (small piece) + coconut milk (light) (Approx. Pittu: ~100g piece; Milk: ~200ml)"
+        ]
+    },
+    {
+        "id": "female_overweight_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "overweight",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Female, Overweight): 1) Rice (1/2 cup) + dhal + 3 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g) 2) Rice (small) + fish + big salad + 1 veg (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Veg: ~100g) 3) No-rice plate: dhal + 3 veg + egg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g; Egg: ~50g) 4) Rice (small) + chicken curry + 2 veg (low oil) (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 5) Rice (small) + fish ambul thiyal + mallung + salad (Approx. Rice: ~200g; Fish: ~100g; Mallung: ~30g; Salad: ~100g) 6) Brown/red rice (small) + lentils + 2 veg (Approx. Rice: ~200g; Veg: ~100g) 7) Grilled fish + large salad + curd (Approx. Fish: ~100g; Salad: ~100g; Curd: ~150g) 8) Chicken/egg salad bowl (no mayo) (Approx. Chicken: ~100g; Salad: ~100g; Egg: ~50g) 9) Stir-fried veg + egg + small rice (Approx. Veg: ~100g; Egg: ~50g; Rice: ~200g) 10) Soup + salad + fish (light lunch) (Approx. Salad: ~100g; Fish: ~100g) 11) Red rice (1/2 cup) + fish + cabbage + gotukola (Approx. Rice: ~200g; Fish: ~100g) 12) Red rice + dhal (thin) + beans + cucumber (Approx. Rice: ~200g; Dhal: ~100g; Beans: ~100g) 13) Salad (lettuce, tomato, cucumber, egg) + dressing (lime) (Approx. Salad: ~100g; Egg: ~50g) 14) Red rice + soya meat + pumpkin + salad (Approx. Rice: ~200g; Meat: ~100g; Pumpkin: ~100g; Salad: ~100g) 15) Red rice + mushroom + spinach + fish ambul thiyal (Approx. Rice: ~200g; Fish: ~100g)",
+        "options": [
+            "Rice (1/2 cup) + dhal + 3 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g)",
+            "Rice (small) + fish + big salad + 1 veg (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Veg: ~100g)",
+            "No-rice plate: dhal + 3 veg + egg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g; Egg: ~50g)",
+            "Rice (small) + chicken curry + 2 veg (low oil) (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice (small) + fish ambul thiyal + mallung + salad (Approx. Rice: ~200g; Fish: ~100g; Mallung: ~30g; Salad: ~100g)",
+            "Brown/red rice (small) + lentils + 2 veg (Approx. Rice: ~200g; Veg: ~100g)",
+            "Grilled fish + large salad + curd (Approx. Fish: ~100g; Salad: ~100g; Curd: ~150g)",
+            "Chicken/egg salad bowl (no mayo) (Approx. Chicken: ~100g; Salad: ~100g; Egg: ~50g)",
+            "Stir-fried veg + egg + small rice (Approx. Veg: ~100g; Egg: ~50g; Rice: ~200g)",
+            "Soup + salad + fish (light lunch) (Approx. Salad: ~100g; Fish: ~100g)",
+            "Red rice (1/2 cup) + fish + cabbage + gotukola (Approx. Rice: ~200g; Fish: ~100g)",
+            "Red rice + dhal (thin) + beans + cucumber (Approx. Rice: ~200g; Dhal: ~100g; Beans: ~100g)",
+            "Salad (lettuce, tomato, cucumber, egg) + dressing (lime) (Approx. Salad: ~100g; Egg: ~50g)",
+            "Red rice + soya meat + pumpkin + salad (Approx. Rice: ~200g; Meat: ~100g; Pumpkin: ~100g; Salad: ~100g)",
+            "Red rice + mushroom + spinach + fish ambul thiyal (Approx. Rice: ~200g; Fish: ~100g)"
+        ]
+    },
+    {
+        "id": "female_overweight_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "female",
+            "bmi_category": "overweight",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Female, Overweight): 1) Vegetable soup + egg (Approx. Vegetable: ~100g; Egg: ~50g) 2) Salad + fish/egg (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g) 3) Boiled vegetables + dhal (Approx. Vegetable: ~100g; Dhal: ~100g) 4) Stir-fried vegetables + grilled fish (Approx. Vegetable: ~100g; Fish: ~100g) 5) Omelette + big salad (Approx. Omelette: ~60g; Salad: ~100g) 6) Thosai (1) + sambar + salad (Approx. Thosai: ~80g each; Salad: ~100g) 7) Kola kanda + egg (if dinner is early) (Approx. Kola kanda: ~200ml; Egg: ~50g) 8) Curd + cucumber + small fruit (Approx. Curd: ~150g; Fruit: ~100g) 9) Clear soup + steamed veg (Approx. Veg: ~100g; Tea: ~200ml) 10) No-rice plate: dhal + mallung + salad (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Salad: ~100g) 11) Soup (lentil/spinach) - no cream 12) Grilled chicken breast + steamed broccoli (Approx. Chicken: ~100g; Tea: ~200ml) 13) Papaya salad + lime juice (Approx. Papaya: ~100g; Salad: ~100g) 14) Boiled egg + cucumber slices + tomato (Approx. Egg: ~50g) 15) Fish stew (light coconut milk) + 1 slice bread (Approx. Fish: ~100g; Milk: ~200ml; Bread: ~30g slice)",
+        "options": [
+            "Vegetable soup + egg (Approx. Vegetable: ~100g; Egg: ~50g)",
+            "Salad + fish/egg (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g)",
+            "Boiled vegetables + dhal (Approx. Vegetable: ~100g; Dhal: ~100g)",
+            "Stir-fried vegetables + grilled fish (Approx. Vegetable: ~100g; Fish: ~100g)",
+            "Omelette + big salad (Approx. Omelette: ~60g; Salad: ~100g)",
+            "Thosai (1) + sambar + salad (Approx. Thosai: ~80g each; Salad: ~100g)",
+            "Kola kanda + egg (if dinner is early) (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Curd + cucumber + small fruit (Approx. Curd: ~150g; Fruit: ~100g)",
+            "Clear soup + steamed veg (Approx. Veg: ~100g; Tea: ~200ml)",
+            "No-rice plate: dhal + mallung + salad (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Salad: ~100g)",
+            "Soup (lentil/spinach) - no cream",
+            "Grilled chicken breast + steamed broccoli (Approx. Chicken: ~100g; Tea: ~200ml)",
+            "Papaya salad + lime juice (Approx. Papaya: ~100g; Salad: ~100g)",
+            "Boiled egg + cucumber slices + tomato (Approx. Egg: ~50g)",
+            "Fish stew (light coconut milk) + 1 slice bread (Approx. Fish: ~100g; Milk: ~200ml; Bread: ~30g slice)"
+        ]
+    },
+    {
+        "id": "male_underweight_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "underweight",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Male, Underweight): 1) String hoppers (4–5) + dhal + pol sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g) 2) Oats with milk + banana + peanuts (Approx. Oats: ~50g (dry); Milk: ~200ml; Banana: ~100g; Peanuts: ~30g) 3) Bread (3) + omelette + milk tea (less sugar) (Approx. Bread: ~30g slice; Omelette: ~60g; Milk: ~200ml; Tea: ~200ml) 4) Kiribath + egg + sambol (Approx. Kiribath: ~100g piece; Egg: ~50g; Sambol: ~30g) 5) Pittu + coconut milk + banana (Approx. Pittu: ~100g piece; Milk: ~200ml; Banana: ~100g) 6) Chickpea curry + roti (3) (Approx. Chickpea: ~150g; Roti: ~60g each) 7) Hoppers (4) + egg (Approx. Hoppers: ~50g each; Egg: ~50g) 8) Kola kanda + 2 boiled eggs + fruit (Approx. Kola kanda: ~200ml; Egg: ~50g; Fruit: ~100g) 9) Manioc/sweet potato + fish/egg (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g; Egg: ~50g) 10) Yogurt/curd + banana + nuts + extra egg (Approx. Yogurt: ~125g; Curd: ~150g; Banana: ~100g; Nuts: ~30g; Egg: ~50g) 11) Roast paan (3) + pol sambol + dhal + cheese (Approx. Paan: ~30g slice; Sambol: ~30g; Dhal: ~100g) 12) Rice + fish curry + dhal (heavy breakfast) (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g) 13) Noodles + 2 eggs + sausages (Approx. Egg: ~50g) 14) Chickpeas + coconut + fried chilies (Approx. Chickpea: ~150g) 15) Lavariya (2) + banana (Approx. Banana: ~100g)",
+        "options": [
+            "String hoppers (4–5) + dhal + pol sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g)",
+            "Oats with milk + banana + peanuts (Approx. Oats: ~50g (dry); Milk: ~200ml; Banana: ~100g; Peanuts: ~30g)",
+            "Bread (3) + omelette + milk tea (less sugar) (Approx. Bread: ~30g slice; Omelette: ~60g; Milk: ~200ml; Tea: ~200ml)",
+            "Kiribath + egg + sambol (Approx. Kiribath: ~100g piece; Egg: ~50g; Sambol: ~30g)",
+            "Pittu + coconut milk + banana (Approx. Pittu: ~100g piece; Milk: ~200ml; Banana: ~100g)",
+            "Chickpea curry + roti (3) (Approx. Chickpea: ~150g; Roti: ~60g each)",
+            "Hoppers (4) + egg (Approx. Hoppers: ~50g each; Egg: ~50g)",
+            "Kola kanda + 2 boiled eggs + fruit (Approx. Kola kanda: ~200ml; Egg: ~50g; Fruit: ~100g)",
+            "Manioc/sweet potato + fish/egg (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g; Egg: ~50g)",
+            "Yogurt/curd + banana + nuts + extra egg (Approx. Yogurt: ~125g; Curd: ~150g; Banana: ~100g; Nuts: ~30g; Egg: ~50g)",
+            "Roast paan (3) + pol sambol + dhal + cheese (Approx. Paan: ~30g slice; Sambol: ~30g; Dhal: ~100g)",
+            "Rice + fish curry + dhal (heavy breakfast) (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g)",
+            "Noodles + 2 eggs + sausages (Approx. Egg: ~50g)",
+            "Chickpeas + coconut + fried chilies (Approx. Chickpea: ~150g)",
+            "Lavariya (2) + banana (Approx. Banana: ~100g)"
+        ]
+    },
+    {
+        "id": "male_underweight_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "underweight",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Male, Underweight): 1) Rice (2 cups) + dhal + fish + 1 veg (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Veg: ~100g) 2) Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 3) Rice + 2 eggs + dhal + salad (Approx. Rice: ~200g; Egg: ~50g; Dhal: ~100g; Salad: ~100g) 4) Rice + sprats curry + dhal + 2 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g) 5) Rice + beef curry (if used) + 2 veg (Approx. Rice: ~200g; Beef: ~100g; Veg: ~100g) 6) Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 7) Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g) 8) Rice + fish ambul thiyal + gotukola sambol + dhal (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Dhal: ~100g) 9) Rice + potato curry + egg + salad (Approx. Rice: ~200g; Egg: ~50g; Salad: ~100g) 10) Rice + chicken + dhal + mallung (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g; Mallung: ~30g) 11) Rice + pork/beef curry + manioc + salad (Approx. Rice: ~200g; Beef: ~100g; Pork: ~100g; Manioc: ~150g; Salad: ~100g) 12) Rice + fried chicken + potato tempered + dhal (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g) 13) Rice + cuttlefish + brinjal + egg (Approx. Rice: ~200g; Fish: ~100g; Egg: ~50g) 14) Rice + dry fish fry + dhal + mukunuwenna (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g) 15) Fried rice (mixed) + chili paste + chop suey (Approx. Rice: ~200g)",
+        "options": [
+            "Rice (2 cups) + dhal + fish + 1 veg (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g; Veg: ~100g)",
+            "Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice + 2 eggs + dhal + salad (Approx. Rice: ~200g; Egg: ~50g; Dhal: ~100g; Salad: ~100g)",
+            "Rice + sprats curry + dhal + 2 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g)",
+            "Rice + beef curry (if used) + 2 veg (Approx. Rice: ~200g; Beef: ~100g; Veg: ~100g)",
+            "Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g)",
+            "Rice + fish ambul thiyal + gotukola sambol + dhal (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Dhal: ~100g)",
+            "Rice + potato curry + egg + salad (Approx. Rice: ~200g; Egg: ~50g; Salad: ~100g)",
+            "Rice + chicken + dhal + mallung (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g; Mallung: ~30g)",
+            "Rice + pork/beef curry + manioc + salad (Approx. Rice: ~200g; Beef: ~100g; Pork: ~100g; Manioc: ~150g; Salad: ~100g)",
+            "Rice + fried chicken + potato tempered + dhal (Approx. Rice: ~200g; Chicken: ~100g; Dhal: ~100g)",
+            "Rice + cuttlefish + brinjal + egg (Approx. Rice: ~200g; Fish: ~100g; Egg: ~50g)",
+            "Rice + dry fish fry + dhal + mukunuwenna (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g)",
+            "Fried rice (mixed) + chili paste + chop suey (Approx. Rice: ~200g)"
+        ]
+    },
+    {
+        "id": "male_underweight_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "underweight",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Male, Underweight): 1) Pittu + fish curry + sambol (Approx. Pittu: ~100g piece; Fish: ~100g; Sambol: ~30g) 2) Rice (1–1.5 cups) + egg + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g) 3) String hoppers (3–4) + dhal + chicken/fish (Approx. String hoppers: ~30g each; Dhal: ~100g; Chicken: ~100g; Fish: ~100g) 4) Vegetable soup + bread (2–3) + egg (Approx. Vegetable: ~100g; Bread: ~30g slice; Egg: ~50g) 5) Roti (2–3) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g) 6) Thosai (3) + sambar + egg (Approx. Thosai: ~80g each; Egg: ~50g) 7) Noodles + egg + veg + chicken (Approx. Egg: ~50g; Veg: ~100g; Chicken: ~100g) 8) Boiled manioc/sweet potato + fish curry (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g) 9) Kiribath + katta sambol + egg (Approx. Kiribath: ~100g piece; Sambol: ~30g; Egg: ~50g) 10) Rice + dhal + fish (smaller than lunch) (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g) 11) Kottu roti (chicken/egg) - homemade/less oil (Approx. Chicken: ~100g; Roti: ~60g each; Egg: ~50g) 12) Paratha (2) + beef/chicken curry (Approx. Chicken: ~100g; Beef: ~100g) 13) Pasta with cream sauce + chicken (Approx. Chicken: ~100g) 14) Burger (homemade) with egg + cheese (Approx. Egg: ~50g) 15) String hoppers (10) + potato curry + sambol (Approx. String hoppers: ~30g each; Sambol: ~30g)",
+        "options": [
+            "Pittu + fish curry + sambol (Approx. Pittu: ~100g piece; Fish: ~100g; Sambol: ~30g)",
+            "Rice (1–1.5 cups) + egg + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g)",
+            "String hoppers (3–4) + dhal + chicken/fish (Approx. String hoppers: ~30g each; Dhal: ~100g; Chicken: ~100g; Fish: ~100g)",
+            "Vegetable soup + bread (2–3) + egg (Approx. Vegetable: ~100g; Bread: ~30g slice; Egg: ~50g)",
+            "Roti (2–3) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g)",
+            "Thosai (3) + sambar + egg (Approx. Thosai: ~80g each; Egg: ~50g)",
+            "Noodles + egg + veg + chicken (Approx. Egg: ~50g; Veg: ~100g; Chicken: ~100g)",
+            "Boiled manioc/sweet potato + fish curry (Approx. Sweet potato: ~150g; Manioc: ~150g; Fish: ~100g)",
+            "Kiribath + katta sambol + egg (Approx. Kiribath: ~100g piece; Sambol: ~30g; Egg: ~50g)",
+            "Rice + dhal + fish (smaller than lunch) (Approx. Rice: ~200g; Dhal: ~100g; Fish: ~100g)",
+            "Kottu roti (chicken/egg) - homemade/less oil (Approx. Chicken: ~100g; Roti: ~60g each; Egg: ~50g)",
+            "Paratha (2) + beef/chicken curry (Approx. Chicken: ~100g; Beef: ~100g)",
+            "Pasta with cream sauce + chicken (Approx. Chicken: ~100g)",
+            "Burger (homemade) with egg + cheese (Approx. Egg: ~50g)",
+            "String hoppers (10) + potato curry + sambol (Approx. String hoppers: ~30g each; Sambol: ~30g)"
+        ]
+    },
+    {
+        "id": "male_normal_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "normal",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Male, Normal): 1) String hoppers (3) + dhal + sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g) 2) Kurakkan roti (2–3) + lunu miris (Approx. Roti: ~60g each) 3) Oats + fruit (Approx. Oats: ~50g (dry); Fruit: ~100g) 4) Hoppers (3) + egg (Approx. Hoppers: ~50g each; Egg: ~50g) 5) Kola kanda + boiled eggs (Approx. Kola kanda: ~200ml; Egg: ~50g) 6) Bread (2) + omelette (Approx. Bread: ~30g slice; Omelette: ~60g) 7) Chickpeas/green gram bowl (Approx. Green gram: ~150g; Chickpea: ~150g) 8) Thosai (2–3) + sambar (Approx. Thosai: ~80g each) 9) Boiled sweet potato + curd (Approx. Sweet potato: ~150g; Curd: ~150g) 10) Rice flakes (aval) + milk (moderate) (Approx. Rice: ~200g; Milk: ~200ml) 11) Milk rice + lunu miris + fish curry (Approx. Rice: ~200g; Milk: ~200ml; Fish: ~100g) 12) Bread (3) + dhal + pol sambol (Approx. Bread: ~30g slice; Dhal: ~100g; Sambol: ~30g) 13) Roti (2) + chicken curry (Approx. Roti: ~60g each; Chicken: ~100g) 14) Green gram + coconut + jaggery (Approx. Green gram: ~150g) 15) Pittu + coconut milk + tripe/babath curry (Approx. Pittu: ~100g piece; Milk: ~200ml)",
+        "options": [
+            "String hoppers (3) + dhal + sambol (Approx. String hoppers: ~30g each; Dhal: ~100g; Sambol: ~30g)",
+            "Kurakkan roti (2–3) + lunu miris (Approx. Roti: ~60g each)",
+            "Oats + fruit (Approx. Oats: ~50g (dry); Fruit: ~100g)",
+            "Hoppers (3) + egg (Approx. Hoppers: ~50g each; Egg: ~50g)",
+            "Kola kanda + boiled eggs (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Bread (2) + omelette (Approx. Bread: ~30g slice; Omelette: ~60g)",
+            "Chickpeas/green gram bowl (Approx. Green gram: ~150g; Chickpea: ~150g)",
+            "Thosai (2–3) + sambar (Approx. Thosai: ~80g each)",
+            "Boiled sweet potato + curd (Approx. Sweet potato: ~150g; Curd: ~150g)",
+            "Rice flakes (aval) + milk (moderate) (Approx. Rice: ~200g; Milk: ~200ml)",
+            "Milk rice + lunu miris + fish curry (Approx. Rice: ~200g; Milk: ~200ml; Fish: ~100g)",
+            "Bread (3) + dhal + pol sambol (Approx. Bread: ~30g slice; Dhal: ~100g; Sambol: ~30g)",
+            "Roti (2) + chicken curry (Approx. Roti: ~60g each; Chicken: ~100g)",
+            "Green gram + coconut + jaggery (Approx. Green gram: ~150g)",
+            "Pittu + coconut milk + tripe/babath curry (Approx. Pittu: ~100g piece; Milk: ~200ml)"
+        ]
+    },
+    {
+        "id": "male_normal_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "normal",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Male, Normal): 1) Rice (1.5 cups) + fish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 2) Rice + dhal + mallung + egg (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Egg: ~50g) 3) Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 4) Rice + fish ambul thiyal + salad + dhal (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Dhal: ~100g) 5) Rice + sprats curry + 2 veg (Approx. Rice: ~200g; Veg: ~100g) 6) Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g) 7) Rice + egg curry + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g) 8) Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g) 9) Rice + lentils + potato curry + salad (Approx. Rice: ~200g; Salad: ~100g) 10) Rice + grilled fish + big salad (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g) 11) Rice + black pork curry + beans + dhal (Approx. Rice: ~200g; Pork: ~100g; Beans: ~100g; Dhal: ~100g) 12) Rice + fish head curry + pol sambol + manioc (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Manioc: ~150g) 13) Rice + prawn curry + cucumber + dhal (Approx. Rice: ~200g; Dhal: ~100g) 14) Rice + egg omelette curry + beans + salad (Approx. Rice: ~200g; Omelette: ~60g; Egg: ~50g; Beans: ~100g; Salad: ~100g) 15) Rice + jackfruit seeds (kos ata) + fish + gotukola (Approx. Rice: ~200g; Fruit: ~100g; Fish: ~100g)",
+        "options": [
+            "Rice (1.5 cups) + fish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + dhal + mallung + egg (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Egg: ~50g)",
+            "Rice + chicken curry + 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice + fish ambul thiyal + salad + dhal (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Dhal: ~100g)",
+            "Rice + sprats curry + 2 veg (Approx. Rice: ~200g; Veg: ~100g)",
+            "Rice + soy-meat curry + dhal + 2 veg (Approx. Rice: ~200g; Meat: ~100g; Dhal: ~100g; Veg: ~100g)",
+            "Rice + egg curry + 2 veg (Approx. Rice: ~200g; Egg: ~50g; Veg: ~100g)",
+            "Rice + prawns/cuttlefish + 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)",
+            "Rice + lentils + potato curry + salad (Approx. Rice: ~200g; Salad: ~100g)",
+            "Rice + grilled fish + big salad (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g)",
+            "Rice + black pork curry + beans + dhal (Approx. Rice: ~200g; Pork: ~100g; Beans: ~100g; Dhal: ~100g)",
+            "Rice + fish head curry + pol sambol + manioc (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Manioc: ~150g)",
+            "Rice + prawn curry + cucumber + dhal (Approx. Rice: ~200g; Dhal: ~100g)",
+            "Rice + egg omelette curry + beans + salad (Approx. Rice: ~200g; Omelette: ~60g; Egg: ~50g; Beans: ~100g; Salad: ~100g)",
+            "Rice + jackfruit seeds (kos ata) + fish + gotukola (Approx. Rice: ~200g; Fruit: ~100g; Fish: ~100g)"
+        ]
+    },
+    {
+        "id": "male_normal_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "normal",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Male, Normal): 1) Soup + bread (1–2) (Approx. Bread: ~30g slice) 2) String hoppers (2–3) + dhal + veg (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g) 3) Rice (3/4–1 cup) + 2 veg + dhal (Approx. Rice: ~200g; Veg: ~100g; Dhal: ~100g) 4) Salad + egg/fish + small rice (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g; Rice: ~200g) 5) Thosai (2) + sambar (Approx. Thosai: ~80g each) 6) Roti (2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g) 7) Pittu (small) + veg + fish/egg (Approx. Pittu: ~100g piece; Veg: ~100g; Fish: ~100g; Egg: ~50g) 8) Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g) 9) Boiled vegetables + dhal + curd (Approx. Vegetable: ~100g; Dhal: ~100g; Curd: ~150g) 10) Omelette + salad (Approx. Omelette: ~60g; Salad: ~100g) 11) Egg hoppers (2) + plain hoppers (2) + seeni sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g) 12) Chapati (2) + dhal + chicken curry (Approx. Chapati: ~60g each; Dhal: ~100g; Chicken: ~100g) 13) Noodles + egg + vegetables (Approx. Egg: ~50g; Vegetable: ~100g) 14) Bread (3) + fish curry + dhal (Approx. Bread: ~30g slice; Fish: ~100g; Dhal: ~100g) 15) Thosai (3) + coconut chutney (Approx. Thosai: ~80g each; Chutney: ~30g)",
+        "options": [
+            "Soup + bread (1–2) (Approx. Bread: ~30g slice)",
+            "String hoppers (2–3) + dhal + veg (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g)",
+            "Rice (3/4–1 cup) + 2 veg + dhal (Approx. Rice: ~200g; Veg: ~100g; Dhal: ~100g)",
+            "Salad + egg/fish + small rice (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g; Rice: ~200g)",
+            "Thosai (2) + sambar (Approx. Thosai: ~80g each)",
+            "Roti (2) + dhal + salad (Approx. Roti: ~60g each; Dhal: ~100g; Salad: ~100g)",
+            "Pittu (small) + veg + fish/egg (Approx. Pittu: ~100g piece; Veg: ~100g; Fish: ~100g; Egg: ~50g)",
+            "Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g)",
+            "Boiled vegetables + dhal + curd (Approx. Vegetable: ~100g; Dhal: ~100g; Curd: ~150g)",
+            "Omelette + salad (Approx. Omelette: ~60g; Salad: ~100g)",
+            "Egg hoppers (2) + plain hoppers (2) + seeni sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g)",
+            "Chapati (2) + dhal + chicken curry (Approx. Chapati: ~60g each; Dhal: ~100g; Chicken: ~100g)",
+            "Noodles + egg + vegetables (Approx. Egg: ~50g; Vegetable: ~100g)",
+            "Bread (3) + fish curry + dhal (Approx. Bread: ~30g slice; Fish: ~100g; Dhal: ~100g)",
+            "Thosai (3) + coconut chutney (Approx. Thosai: ~80g each; Chutney: ~30g)"
+        ]
+    },
+    {
+        "id": "male_overweight_breakfast_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "overweight",
+            "meal_time": "breakfast"
+        },
+        "text": "Choose 1 breakfast option (Male, Overweight): 1) Oats with water + cinnamon + small fruit (Approx. Oats: ~50g (dry); Fruit: ~100g) 2) Boiled gram/green gram + cucumber (Approx. Green gram: ~150g) 3) Kurakkan roti (1–2) + lunu miris (Approx. Roti: ~60g each) 4) String hoppers (1–2) + dhal (Approx. String hoppers: ~30g each; Dhal: ~100g) 5) Kola kanda (no sugar) + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g) 6) Thosai (1–2) + sambar (Approx. Thosai: ~80g each) 7) Plain curd/yogurt + papaya (Approx. Yogurt: ~125g; Curd: ~150g; Papaya: ~100g) 8) Vegetable omelette + salad (Approx. Vegetable: ~100g; Omelette: ~60g; Salad: ~100g) 9) Chickpeas + onion + lime (Approx. Chickpea: ~150g) 10) Boiled sweet potato (small) + sambol (Approx. Sweet potato: ~150g; Sambol: ~30g) 11) Red rice gruel (Kenda) + piece of jaggery (Approx. Rice: ~200g) 12) Fruit salad (no sugar) + yogurt (Approx. Fruit: ~100g; Salad: ~100g; Yogurt: ~125g) 13) Boiled manioc (small) + kochchi sambol (Approx. Manioc: ~150g; Sambol: ~30g) 14) Whole wheat bread (2) + fish paste (no butter) (Approx. Bread: ~30g slice; Fish: ~100g) 15) Mung bean boil (no coconut) + lunu miris (Approx. Mung bean: ~150g)",
+        "options": [
+            "Oats with water + cinnamon + small fruit (Approx. Oats: ~50g (dry); Fruit: ~100g)",
+            "Boiled gram/green gram + cucumber (Approx. Green gram: ~150g)",
+            "Kurakkan roti (1–2) + lunu miris (Approx. Roti: ~60g each)",
+            "String hoppers (1–2) + dhal (Approx. String hoppers: ~30g each; Dhal: ~100g)",
+            "Kola kanda (no sugar) + boiled egg (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Thosai (1–2) + sambar (Approx. Thosai: ~80g each)",
+            "Plain curd/yogurt + papaya (Approx. Yogurt: ~125g; Curd: ~150g; Papaya: ~100g)",
+            "Vegetable omelette + salad (Approx. Vegetable: ~100g; Omelette: ~60g; Salad: ~100g)",
+            "Chickpeas + onion + lime (Approx. Chickpea: ~150g)",
+            "Boiled sweet potato (small) + sambol (Approx. Sweet potato: ~150g; Sambol: ~30g)",
+            "Red rice gruel (Kenda) + piece of jaggery (Approx. Rice: ~200g)",
+            "Fruit salad (no sugar) + yogurt (Approx. Fruit: ~100g; Salad: ~100g; Yogurt: ~125g)",
+            "Boiled manioc (small) + kochchi sambol (Approx. Manioc: ~150g; Sambol: ~30g)",
+            "Whole wheat bread (2) + fish paste (no butter) (Approx. Bread: ~30g slice; Fish: ~100g)",
+            "Mung bean boil (no coconut) + lunu miris (Approx. Mung bean: ~150g)"
+        ]
+    },
+    {
+        "id": "male_overweight_lunch_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "overweight",
+            "meal_time": "lunch"
+        },
+        "text": "Choose 1 lunch option (Male, Overweight): 1) Rice (3/4 cup) + dhal + 3 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g) 2) Rice (small) + fish + big salad + 1 veg (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Veg: ~100g) 3) No-rice plate: dhal + 3 veg + egg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g; Egg: ~50g) 4) Rice (small) + chicken curry + 2 veg (low oil) (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g) 5) Rice (small) + fish ambul thiyal + mallung + salad (Approx. Rice: ~200g; Fish: ~100g; Mallung: ~30g; Salad: ~100g) 6) Red rice (small) + lentils + 2 veg (Approx. Rice: ~200g; Veg: ~100g) 7) Grilled fish + large salad + curd (Approx. Fish: ~100g; Salad: ~100g; Curd: ~150g) 8) Chicken/egg salad bowl (Approx. Chicken: ~100g; Salad: ~100g; Egg: ~50g) 9) Stir-fried vegetables + egg + small rice (Approx. Vegetable: ~100g; Egg: ~50g; Rice: ~200g) 10) Soup + salad + fish (Approx. Salad: ~100g; Fish: ~100g) 11) Red rice (3/4 cup) + fish + snake gourd + dhal (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g) 12) Red rice + chicken (no skin) + salad + beans (Approx. Rice: ~200g; Chicken: ~100g; Salad: ~100g; Beans: ~100g) 13) Red rice + soya meat + cabbage + gotukola (Approx. Rice: ~200g; Meat: ~100g) 14) Red rice + egg curry (1 egg) + cucumber + spinach (Approx. Rice: ~200g; Egg: ~50g) 15) Red rice + bitter gourd + fish ambul thiyal + dhal (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g)",
+        "options": [
+            "Rice (3/4 cup) + dhal + 3 veg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g)",
+            "Rice (small) + fish + big salad + 1 veg (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g; Veg: ~100g)",
+            "No-rice plate: dhal + 3 veg + egg (Approx. Rice: ~200g; Dhal: ~100g; Veg: ~100g; Egg: ~50g)",
+            "Rice (small) + chicken curry + 2 veg (low oil) (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)",
+            "Rice (small) + fish ambul thiyal + mallung + salad (Approx. Rice: ~200g; Fish: ~100g; Mallung: ~30g; Salad: ~100g)",
+            "Red rice (small) + lentils + 2 veg (Approx. Rice: ~200g; Veg: ~100g)",
+            "Grilled fish + large salad + curd (Approx. Fish: ~100g; Salad: ~100g; Curd: ~150g)",
+            "Chicken/egg salad bowl (Approx. Chicken: ~100g; Salad: ~100g; Egg: ~50g)",
+            "Stir-fried vegetables + egg + small rice (Approx. Vegetable: ~100g; Egg: ~50g; Rice: ~200g)",
+            "Soup + salad + fish (Approx. Salad: ~100g; Fish: ~100g)",
+            "Red rice (3/4 cup) + fish + snake gourd + dhal (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g)",
+            "Red rice + chicken (no skin) + salad + beans (Approx. Rice: ~200g; Chicken: ~100g; Salad: ~100g; Beans: ~100g)",
+            "Red rice + soya meat + cabbage + gotukola (Approx. Rice: ~200g; Meat: ~100g)",
+            "Red rice + egg curry (1 egg) + cucumber + spinach (Approx. Rice: ~200g; Egg: ~50g)",
+            "Red rice + bitter gourd + fish ambul thiyal + dhal (Approx. Rice: ~200g; Fish: ~100g; Dhal: ~100g)"
+        ]
+    },
+    {
+        "id": "male_overweight_dinner_options_v1",
+        "type": "meal_options",
+        "filters": {
+            "gender": "male",
+            "bmi_category": "overweight",
+            "meal_time": "dinner"
+        },
+        "text": "Choose 1 dinner option (Male, Overweight): 1) Vegetable soup + egg (Approx. Vegetable: ~100g; Egg: ~50g) 2) Salad + grilled fish/egg (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g) 3) Boiled vegetables + dhal (Approx. Vegetable: ~100g; Dhal: ~100g) 4) Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g) 5) Omelette + big salad (Approx. Omelette: ~60g; Salad: ~100g) 6) Thosai (1) + sambar + salad (Approx. Thosai: ~80g each; Salad: ~100g) 7) Kola kanda + egg (early dinner) (Approx. Kola kanda: ~200ml; Egg: ~50g) 8) Curd + cucumber + small fruit (Approx. Curd: ~150g; Fruit: ~100g) 9) Clear soup + steamed vegetables (Approx. Vegetable: ~100g; Tea: ~200ml) 10) No-rice plate: dhal + mallung + salad (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Salad: ~100g) 11) Soup (chicken/veg) + 1 toast (Approx. Chicken: ~100g; Veg: ~100g) 12) Salad with grilled fish/chicken (Approx. Chicken: ~100g; Salad: ~100g; Fish: ~100g) 13) Boiled vegetables + egg white omelette (Approx. Vegetable: ~100g; Omelette: ~60g; Egg: ~50g) 14) Yogurt + apple/pear (Approx. Yogurt: ~125g) 15) String hoppers (3) + sothi (light) + sambol (Approx. String hoppers: ~30g each; Sambol: ~30g)",
+        "options": [
+            "Vegetable soup + egg (Approx. Vegetable: ~100g; Egg: ~50g)",
+            "Salad + grilled fish/egg (Approx. Salad: ~100g; Fish: ~100g; Egg: ~50g)",
+            "Boiled vegetables + dhal (Approx. Vegetable: ~100g; Dhal: ~100g)",
+            "Stir-fried vegetables + fish (Approx. Vegetable: ~100g; Fish: ~100g)",
+            "Omelette + big salad (Approx. Omelette: ~60g; Salad: ~100g)",
+            "Thosai (1) + sambar + salad (Approx. Thosai: ~80g each; Salad: ~100g)",
+            "Kola kanda + egg (early dinner) (Approx. Kola kanda: ~200ml; Egg: ~50g)",
+            "Curd + cucumber + small fruit (Approx. Curd: ~150g; Fruit: ~100g)",
+            "Clear soup + steamed vegetables (Approx. Vegetable: ~100g; Tea: ~200ml)",
+            "No-rice plate: dhal + mallung + salad (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Salad: ~100g)",
+            "Soup (chicken/veg) + 1 toast (Approx. Chicken: ~100g; Veg: ~100g)",
+            "Salad with grilled fish/chicken (Approx. Chicken: ~100g; Salad: ~100g; Fish: ~100g)",
+            "Boiled vegetables + egg white omelette (Approx. Vegetable: ~100g; Omelette: ~60g; Egg: ~50g)",
+            "Yogurt + apple/pear (Approx. Yogurt: ~125g)",
+            "String hoppers (3) + sothi (light) + sambol (Approx. String hoppers: ~30g each; Sambol: ~30g)"
+        ]
+    },
+    {
+        "id": "snacks_underweight_any_v1",
+        "type": "snack_options",
+        "filters": {
+            "bmi_category": "underweight"
+        },
+        "text": "Snack options (Underweight): 1) Milk + banana 2) Yogurt/curd + fruit 3) Roasted peanuts/cashews (handful) 4) Peanut chikki (small) 5) Egg sandwich 6) Chickpeas/green gram bowl 7) Avocado (if available) + pinch of salt 8) Milk tea (less sugar) + roasted gram 9) Fruit + cheese (small) 10) Smoothie: milk + banana + oats (small) 11) Sesame balls (Thala guli) 12) Date cake piece 13) Butter cake piece 14) Samaposha balls 15) Full cream milk glass",
+        "options": [
+            "Milk + banana",
+            "Yogurt/curd + fruit",
+            "Roasted peanuts/cashews (handful)",
+            "Peanut chikki (small)",
+            "Egg sandwich",
+            "Chickpeas/green gram bowl",
+            "Avocado (if available) + pinch of salt",
+            "Milk tea (less sugar) + roasted gram",
+            "Fruit + cheese (small)",
+            "Smoothie: milk + banana + oats (small)",
+            "Sesame balls (Thala guli)",
+            "Date cake piece",
+            "Butter cake piece",
+            "Samaposha balls",
+            "Full cream milk glass"
+        ]
+    },
+    {
+        "id": "snacks_normal_any_v1",
+        "type": "snack_options",
+        "filters": {
+            "bmi_category": "normal"
+        },
+        "text": "Snack options (Normal): 1) Fruit (one serving) 2) Curd/yogurt 3) Boiled gram/green gram 4) King coconut water 5) Roasted peanuts (small) 6) Vegetable salad cup 7) Boiled egg 8) Tea (no sugar) + roasted gram 9) Papaya + lime 10) Small handful of nuts 11) Marie biscuits (3-4) 12) Banana fritters (oil drained) 13) Aggala (1) 14) Veralu achcharu 15) Guava with salt and chili",
+        "options": [
+            "Fruit (one serving)",
+            "Curd/yogurt",
+            "Boiled gram/green gram",
+            "King coconut water",
+            "Roasted peanuts (small)",
+            "Vegetable salad cup",
+            "Boiled egg",
+            "Tea (no sugar) + roasted gram",
+            "Papaya + lime",
+            "Small handful of nuts",
+            "Marie biscuits (3-4)",
+            "Banana fritters (oil drained)",
+            "Aggala (1)",
+            "Veralu achcharu",
+            "Guava with salt and chili"
+        ]
+    },
+    {
+        "id": "snacks_overweight_any_v1",
+        "type": "snack_options",
+        "filters": {
+            "bmi_category": "overweight"
+        },
+        "text": "Snack options (Overweight): 1) Cucumber/carrot sticks 2) Plain curd/yogurt (small) 3) Fruit (one serving) 4) Tea (no sugar) + roasted gram (small) 5) Boiled egg 6) Tomato + onion + lime salad 7) Clear soup (small bowl) 8) Watermelon (small) 9) Green gram (small) 10) Nuts (very small handful) 11) Green apple 12) Guava (no salt/sugar) 13) Cucumber slices 14) Plain tea + 1 cracker 15) Handful of roasted gram (no salt)",
+        "options": [
+            "Cucumber/carrot sticks",
+            "Plain curd/yogurt (small)",
+            "Fruit (one serving)",
+            "Tea (no sugar) + roasted gram (small)",
+            "Boiled egg",
+            "Tomato + onion + lime salad",
+            "Clear soup (small bowl)",
+            "Watermelon (small)",
+            "Green gram (small)",
+            "Nuts (very small handful)",
+            "Green apple",
+            "Guava (no salt/sugar)",
+            "Cucumber slices",
+            "Plain tea + 1 cracker",
+            "Handful of roasted gram (no salt)"
+        ]
+    },
+    {
+        "id": "guidance_ectomorph_v1",
+        "type": "bodytype_guidance",
+        "filters": {
+            "somatotype": "Ectomorph"
+        },
+        "text": "Ectomorph rules: 1) Add 1–2 snacks daily. Do not skip breakfast. Add protein in every meal (egg/fish/chicken/dhal). Increase portions gradually (rice/string hoppers/roti) but keep it balanced with vegetables. Prefer milk/curd, peanuts, bananas, and extra egg if tolerated.",
+        "options": [
+            "Add 1–2 snacks daily. Do not skip breakfast. Add protein in every meal (egg/fish/chicken/dhal). Increase portions gradually (rice/string hoppers/roti) but keep it balanced with vegetables. Prefer milk/curd, peanuts, bananas, and extra egg if tolerated."
+        ]
+    },
+    {
+        "id": "guidance_mesomorph_v1",
+        "type": "bodytype_guidance",
+        "filters": {
+            "somatotype": "Mesomorph"
+        },
+        "text": "Mesomorph rules: 1) Keep steady protein each meal (egg/fish/chicken/dhal). Use moderate carbs (rice/roti/string hoppers) and plenty of vegetables. If goal is fat loss, reduce rice portion; if goal is muscle gain, add one extra protein item or snack.",
+        "options": [
+            "Keep steady protein each meal (egg/fish/chicken/dhal). Use moderate carbs (rice/roti/string hoppers) and plenty of vegetables. If goal is fat loss, reduce rice portion; if goal is muscle gain, add one extra protein item or snack."
+        ]
+    },
+    {
+        "id": "guidance_endomorph_v1",
+        "type": "bodytype_guidance",
+        "filters": {
+            "somatotype": "Endomorph"
+        },
+        "text": "Endomorph rules: 1) Start meals with vegetables + protein, then carbs. Keep rice/roti/string hoppers smaller. Avoid sugary drinks and frequent fried foods. Prefer boiled/grilled/steamed options. Add fiber (mallung, salads) and keep dinner lighter than lunch.",
+        "options": [
+            "Start meals with vegetables + protein, then carbs. Keep rice/roti/string hoppers smaller. Avoid sugary drinks and frequent fried foods. Prefer boiled/grilled/steamed options. Add fiber (mallung, salads) and keep dinner lighter than lunch."
+        ]
+    },
+    {
+        "id": "rules_bmi_category_v1",
+        "type": "rules",
+        "filters": {},
+        "text": "BMI category rules used by the system: 1) underweight if BMI < 18.5, normal if BMI 18.5–22.9, overweight if BMI >= 23. Retrieval should primarily filter by gender + bmi_category + meal_time, then add somatotype guidance.",
+        "options": [
+            "underweight if BMI < 18.5, normal if BMI 18.5–22.9, overweight if BMI >= 23. Retrieval should primarily filter by gender + bmi_category + meal_time, then add somatotype guidance."
+        ]
+    },
+    {
+        "id": "output_format_mealplan_json_v1",
+        "type": "output_schema",
+        "filters": {},
+        "text": "Output must be strict JSON. Required keys: 1) breakfast, lunch, dinner, notes. Optional: snacks. Each meal should be an array of selected items with portion hints. Use retrieved meal options first, then add short notes from guidance.",
+        "options": [
+            "breakfast, lunch, dinner, notes. Optional: snacks. Each meal should be an array of selected items with portion hints. Use retrieved meal options first, then add short notes from guidance."
+        ]
+    }
+]
