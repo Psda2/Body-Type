@@ -399,6 +399,22 @@
       "body_type": "",
       "somatotype": "Mesomorph",
       "_id": "24"
+    },
+    {
+      "user_email": "senavirathnasrmsrb@gmail.com",
+      "date": "2026-02-15T21:42:32.051751",
+      "gender": "male",
+      "weight_kg": 57.0,
+      "height_cm": 169.0,
+      "waist_cm": 70.0,
+      "hip_cm": 80.0,
+      "chest_cm": 80.0,
+      "shoulder_breadth_cm": 38.0,
+      "wrist_cm": 14.0,
+      "bmi": 20.0,
+      "body_type": "",
+      "somatotype": "Ectomorph",
+      "_id": "25"
     }
   ],
   "meal_plans": [
@@ -7346,6 +7362,315 @@
       "goal": "Weight Loss",
       "active": true,
       "_id": "48"
+    },
+    {
+      "user_email": "senavirathnasrmsrb@gmail.com",
+      "created_at": "2026-02-15T21:43:54.444635",
+      "plan_data": {
+        "meal_plan": {
+          "day_1": {
+            "breakfast": {
+              "main": {
+                "item": "Thosai",
+                "portion": "2-3 pieces + sambar (Approx. Thosai: ~80g each)"
+              },
+              "alternative": {
+                "item": "Rice flakes (aval)",
+                "portion": "with milk (Approx. Rice: ~200g; Milk: ~200ml)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + chicken curry",
+                "portion": "Approx. Rice: ~200g; Chicken: ~100g; 2 veg: ~100g each"
+              },
+              "alternative": {
+                "item": "Rice + black pork curry",
+                "portion": "Approx. Rice: ~200g; Pork: ~100g; beans + dhal"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "Omelette",
+                "portion": "with salad (Approx. Omelette: ~60g; Salad: ~100g)"
+              },
+              "alternative": {
+                "item": "Thosai",
+                "portion": "2 pieces + coconut chutney (Approx. Thosai: ~80g each; Chutney: ~30g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Fruit",
+                "portion": "one serving"
+              },
+              "alternative": {
+                "item": "Guava with salt and chili",
+                "portion": "one piece"
+              }
+            }
+          },
+          "day_2": {
+            "breakfast": {
+              "main": {
+                "item": "Pittu",
+                "portion": "with coconut milk + tripe curry (Approx. Pittu: ~100g; Milk: ~200ml)"
+              },
+              "alternative": {
+                "item": "Kola kanda",
+                "portion": "with boiled eggs (Approx. Kola kanda: ~200ml; Egg: ~50g)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + prawns",
+                "portion": "Approx. Rice: ~200g; Fish: ~100g; 2 veg: ~100g"
+              },
+              "alternative": {
+                "item": "Rice + grilled fish",
+                "portion": "with big salad (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "Stir-fried vegetables",
+                "portion": "with fish (Approx. Vegetable: ~100g; Fish: ~100g)"
+              },
+              "alternative": {
+                "item": "Egg hoppers",
+                "portion": "2 + plain hoppers 2 + seeni sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "King coconut water",
+                "portion": "one serving"
+              },
+              "alternative": {
+                "item": "Marie biscuits",
+                "portion": "3-4 pieces"
+              }
+            }
+          },
+          "day_3": {
+            "breakfast": {
+              "main": {
+                "item": "Green gram",
+                "portion": "with coconut + jaggery (Approx. Green gram: ~150g)"
+              },
+              "alternative": {
+                "item": "Roti",
+                "portion": "2 with chicken curry (Approx. Roti: ~60g each; Chicken: ~100g)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + fish head curry",
+                "portion": "with pol sambol + manioc (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Manioc: ~150g)"
+              },
+              "alternative": {
+                "item": "Rice + dhal",
+                "portion": "with mallung + egg (Approx. Rice: ~200g; Dhal: ~100g; Mallung: ~30g; Egg: ~50g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "String hoppers",
+                "portion": "2-3 with dhal + veg (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g)"
+              },
+              "alternative": {
+                "item": "Thosai",
+                "portion": "3 + coconut chutney (Approx. Thosai: ~80g each; Chutney: ~30g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Vegetable salad cup",
+                "portion": "one serving"
+              },
+              "alternative": {
+                "item": "Roasted peanuts",
+                "portion": "small serving"
+              }
+            }
+          },
+          "day_4": {
+            "breakfast": {
+              "main": {
+                "item": "Milk rice",
+                "portion": "with lunu miris + fish curry (Approx. Rice: ~200g; Milk: ~200ml; Fish: ~100g)"
+              },
+              "alternative": {
+                "item": "Bread",
+                "portion": "2 slices + omelette (Approx. Bread: ~30g each; Omelette: ~60g)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + prawn curry",
+                "portion": "with cucumber + dhal (Approx. Rice: ~200g; Dhal: ~100g)"
+              },
+              "alternative": {
+                "item": "Rice + chicken curry",
+                "portion": "with 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "Soup",
+                "portion": "with bread (1-2 slices; Approx. Bread: ~30g each)"
+              },
+              "alternative": {
+                "item": "Rice",
+                "portion": "3/4-1 cup with 2 veg + dhal (Approx. Rice: ~200g; Veg: ~100g; Dhal: ~100g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Banana fritters",
+                "portion": "oil drained, 1 serving"
+              },
+              "alternative": {
+                "item": "Aggala",
+                "portion": "1 piece"
+              }
+            }
+          },
+          "day_5": {
+            "breakfast": {
+              "main": {
+                "item": "Roti",
+                "portion": "2 + chicken curry (Approx. Roti: ~60g each; Chicken: ~100g)"
+              },
+              "alternative": {
+                "item": "Kola kanda",
+                "portion": "with boiled eggs (Approx. Kola kanda: ~200ml; Egg: ~50g)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + grilled fish",
+                "portion": "with big salad (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g)"
+              },
+              "alternative": {
+                "item": "Rice + prawns",
+                "portion": "with 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "Thosai",
+                "portion": "2 + sambar (Approx. Thosai: ~80g each)"
+              },
+              "alternative": {
+                "item": "String hoppers",
+                "portion": "2-3 with dhal + veg (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Guava with salt and chili",
+                "portion": "one piece"
+              },
+              "alternative": {
+                "item": "Fruit",
+                "portion": "one serving"
+              }
+            }
+          },
+          "day_6": {
+            "breakfast": {
+              "main": {
+                "item": "Pittu",
+                "portion": "with coconut milk + tripe curry (Approx. Pittu: ~100g; Milk: ~200ml)"
+              },
+              "alternative": {
+                "item": "Thosai",
+                "portion": "3 + coconut chutney (Approx. Thosai: ~80g each; Chutney: ~30g)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + chicken curry",
+                "portion": "with 2 veg (Approx. Rice: ~200g; Chicken: ~100g; Veg: ~100g)"
+              },
+              "alternative": {
+                "item": "Rice + fish head curry",
+                "portion": "with pol sambol + manioc (Approx. Rice: ~200g; Fish: ~100g; Sambol: ~30g; Manioc: ~150g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "Omelette",
+                "portion": "with salad (Approx. Omelette: ~60g; Salad: ~100g)"
+              },
+              "alternative": {
+                "item": "Thosai",
+                "portion": "2 + sambar (Approx. Thosai: ~80g each)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Vegetable salad cup",
+                "portion": "one serving"
+              },
+              "alternative": {
+                "item": "Roasted peanuts",
+                "portion": "small serving"
+              }
+            }
+          },
+          "day_7": {
+            "breakfast": {
+              "main": {
+                "item": "Green gram",
+                "portion": "with coconut + jaggery (Approx. Green gram: ~150g)"
+              },
+              "alternative": {
+                "item": "Rice flakes (aval)",
+                "portion": "with milk (Approx. Rice: ~200g; Milk: ~200ml)"
+              }
+            },
+            "lunch": {
+              "main": {
+                "item": "Rice + grilled fish",
+                "portion": "with big salad (Approx. Rice: ~200g; Fish: ~100g; Salad: ~100g)"
+              },
+              "alternative": {
+                "item": "Rice + prawns",
+                "portion": "with 2 veg (Approx. Rice: ~200g; Fish: ~100g; Veg: ~100g)"
+              }
+            },
+            "dinner": {
+              "main": {
+                "item": "String hoppers",
+                "portion": "2-3 with dhal + veg (Approx. String hoppers: ~30g each; Dhal: ~100g; Veg: ~100g)"
+              },
+              "alternative": {
+                "item": "Egg hoppers",
+                "portion": "2 + plain hoppers 2 + seeni sambol (Approx. Hoppers: ~50g each; Egg: ~50g; Sambol: ~30g)"
+              }
+            },
+            "snacks": {
+              "main": {
+                "item": "Banana fritters",
+                "portion": "oil drained, 1 serving"
+              },
+              "alternative": {
+                "item": "Aggala",
+                "portion": "1 piece"
+              }
+            }
+          }
+        },
+        "advice": [
+          "Keep steady protein each meal (egg/fish/chicken/dhal).",
+          "Use moderate carbs (rice/roti/string hoppers) and plenty of vegetables."
+        ]
+      },
+      "goal": "Healthy Living",
+      "active": true,
+      "_id": "49"
     }
   ],
   "chat_history": [
@@ -7404,6 +7729,20 @@
       "is_user": false,
       "timestamp": "2026-02-15T13:43:20.071649",
       "_id": "8"
+    },
+    {
+      "user_email": "senavirathnasrmsrb@gmail.com",
+      "text": "Hh",
+      "is_user": true,
+      "timestamp": "2026-02-15T21:52:15.966936",
+      "_id": "9"
+    },
+    {
+      "user_email": "senavirathnasrmsrb@gmail.com",
+      "text": "Hello! How can I assist you today?",
+      "is_user": false,
+      "timestamp": "2026-02-15T21:52:17.581612",
+      "_id": "10"
     }
   ]
 }

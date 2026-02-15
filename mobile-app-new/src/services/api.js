@@ -6,7 +6,7 @@ import { getAuthToken } from '../utils/storage';
 // For iOS simulator: http://localhost:8001
 // For physical device: http://YOUR_COMPUTER_IP:8001
 // Replace with your machine's IP if testing on physical device
-const BASE_URL = 'http://10.10.45.79:8001'; // User Local IP (Updated)
+const BASE_URL = 'http://192.168.43.151:8001'; // User Local IP (Updated to match current network)
 
 // Create axios instance
 const api = axios.create({
