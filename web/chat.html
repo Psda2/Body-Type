@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - Body Type Analyzer</title>
+    <link rel="stylesheet" href="modern.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .chat-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .chat-header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .chat-header-title {
+            flex: 1;
+        }
+
+        .chat-header-title h2 {
+            margin: 0;
+            font-size: var(--font-size-lg);
+        }
+
+        .chat-header-title p {
+            margin: 0;
+            font-size: var(--font-size-xs);
+            opacity: 0.9;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: var(--spacing-lg);
+            background: var(--background-gray);
+        }
+
+        .message {
+            margin-bottom: var(--spacing-md);
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .message.user .chat-bubble {
+            margin-left: auto;
+        }
+
+        .message.assistant .chat-bubble {
+            margin-right: auto;
+        }
+
+        .chat-input-area {
+            padding: var(--spacing-md);
+            background: var(--card-white);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            gap: var(--spacing-sm);
+            padding-bottom: calc(var(--spacing-md) + 70px); /* Account for bottom nav */
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-pill);
+            font-size: var(--font-size-base);
+            font-family: var(--font-family);
+            outline: none;
+        }
+
+        .chat-input:focus {
+            border-color: var(--primary-blue);
+        }
+
+        .send-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background var(--transition-base);
+        }
+
+        .send-btn:hover {
+            background: var(--primary-blue-dark);
+        }
+
+        .send-btn:disabled {
+            background: var(--border-light);
+            cursor: not-allowed;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: var(--spacing-md);
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+        }
+
+        .typing-indicator.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-page">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">←</button>
+            <div class="chat-header-title">
+                <h2>AI Health Assistant</h2>
+                <p>Ask me anything about health & fitness</p>
+            </div>
+            <div style="font-size: 24px;">🤖</div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message assistant">
+                <div class="chat-bubble ai">
+                    👋 Hello! I'm your AI health assistant. I have access to your measurement history and can provide personalized advice. How can I help you today?
+                </div>
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator">
+            AI is typing...
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-area">
+            <input 
+                type="text" 
+                id="messageInput" 
+                class="chat-input" 
+                placeholder="Type your message..."
+                autocomplete="off"
+            />
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                ➤
+            </button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="#" onclick="alert('Meal Plans coming soon!'); return false;" class="nav-item">
+                <div class="nav-icon">🍽️</div>
+                <div class="nav-label">Meal Plans</div>
+            </a>
+            <a href="dashboard.html" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <div class="nav-label">Profile</div>
+            </a>
+            <a href="body-analysis.html" class="nav-item">
+                <div class="nav-icon">📊</div>
+                <div class="nav-label">Analysis</div>
+            </a>
+            <a href="#" class="nav-item active">
+                <div class="nav-icon">💬</div>
+                <div class="nav-label">Chat</div>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        if (!localStorage.getItem('auth_token')) {
+            window.location.href = 'index.html';
+        }
+        
+        const chatMessages = document.getElementById('chatMessages');
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const typingIndicator = document.getElementById('typingIndicator');
+        
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+        
+        function addMessage(text, isUser) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'assistant'}`;
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = `chat-bubble ${isUser ? 'user' : 'ai'}`;
+            bubbleDiv.textContent = text;
+            
+            messageDiv.appendChild(bubbleDiv);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            // Disable input while sending
+            messageInput.disabled = true;
+            sendBtn.disabled = true;
+            
+            addMessage(message, true);
+            messageInput.value = '';
+            
+            // Show typing indicator
+            typingIndicator.classList.add('active');
+            
+            const token = localStorage.getItem('auth_token');
+            
+            try {
+                const response = await fetch('http://localhost:8001/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ query: message })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    typingIndicator.classList.remove('active');
+                    addMessage(data.response, false);
+                } else {
+                    typingIndicator.classList.remove('active');
+                    addMessage('❌ Error: Failed to get response. Please try again.', false);
+                }
+            } catch (error) {
+                typingIndicator.classList.remove('active');
+                addMessage('❌ Network error: ' + error.message, false);
+            } finally {
+                // Re-enable input
+                messageInput.disabled = false;
+                sendBtn.disabled = false;
+                messageInput.focus();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Body Type Analyzer</title>
+    <link rel="stylesheet" href="modern.css">
+    <style>
+        body {
+            padding-bottom: 100px;
+        }
+
+        .dashboard-header {
+            padding: var(--spacing-lg);
+            padding-bottom: 0;
+        }
+
+        .action-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            padding: var(--spacing-lg);
+        }
+
+        .action-card {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .action-card-icon {
+            font-size: 48px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .logout-section {
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Profile Card -->
+        <div class="dashboard-header">
+            <div class="profile-card">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px;">
+                        👤
+                    </div>
+                    <div>
+                        <h2 id="userName" style="margin-bottom: 4px;">Welcome Back</h2>
+                        <p id="userEmail" style="opacity: 0.9; font-size: var(--font-size-sm); margin: 0;">test@example.com</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <button onclick="logout()" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-pill); cursor: pointer; font-weight: 600;">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Age</span>
+                        <span class="stat-value">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Weight</span>
+                        <span class="stat-value">--kg</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Height</span>
+                        <span class="stat-value">--cm</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Gender</span>
+                        <span class="stat-value">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">BMI</span>
+                        <span class="stat-value">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Cards -->
+        <div class="action-cards-grid">
+            <a href="body-analysis.html" class="action-card">
+                <div class="action-card-icon">📊</div>
+                <div class="action-card-content">
+                    <h3 class="action-card-title">Body Analysis</h3>
+                    <p class="action-card-description">Analyze your body type and get personalized insights based on your measurements</p>
+                    <button class="btn btn-primary btn-small" style="margin-top: var(--spacing-md);">Start Analysis</button>
+                </div>
+            </a>
+
+            <a href="chat.html" class="action-card">
+                <div class="action-card-icon">💬</div>
+                <div class="action-card-content">
+                    <h3 class="action-card-title">AI Health Assistant</h3>
+                    <p class="action-card-description">Chat with our AI advisor for personalized health and fitness guidance</p>
+                    <button class="btn btn-primary btn-small" style="margin-top: var(--spacing-md);">Start Chat</button>
+                </div>
+            </a>
+
+            <a href="#" onclick="alert('Meal planning feature coming soon!'); return false;" class="action-card">
+                <div class="action-card-icon">🍽️</div>
+                <div class="action-card-content">
+                    <h3 class="action-card-title">Meal Plans</h3>
+                    <p class="action-card-description">Get customized meal plans based on your body type and health goals</p>
+                    <button class="btn btn-outline btn-small" style="margin-top: var(--spacing-md);">Coming Soon</button>
+                </div>
+            </a>
+
+            <a href="#" onclick="alert('Exercise recommendations coming soon!'); return false;" class="action-card">
+                <div class="action-card-icon">🏋️</div>
+                <div class="action-card-content">
+                    <h3 class="action-card-title">Workout Plans</h3>
+                    <p class="action-card-description">Discover exercises tailored to your body type for optimal results</p>
+                    <button class="btn btn-outline btn-small" style="margin-top: var(--spacing-md);">Coming Soon</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="#" onclick="alert('Meal Plans coming soon!'); return false;" class="nav-item">
+                <div class="nav-icon">🍽️</div>
+                <div class="nav-label">Meal Plans</div>
+            </a>
+            <a href="#" class="nav-item active">
+                <div class="nav-icon">👤</div>
+                <div class="nav-label">Profile</div>
+            </a>
+            <a href="body-analysis.html" class="nav-item">
+                <div class="nav-icon">📊</div>
+                <div class="nav-label">Analysis</div>
+            </a>
+            <a href="chat.html" class="nav-item">
+                <div class="nav-icon">💬</div>
+                <div class="nav-label">Chat</div>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('auth_token')) {
+            window.location.href = 'index.html';
+        }
+
+        // Set user email from localStorage
+        const userEmail = localStorage.getItem('user_email');
+        if (userEmail) {
+            document.getElementById('userEmail').textContent = userEmail;
+            // Extract name from email (before @)
+            const name = userEmail.split('@')[0];
+            document.getElementById('userName').textContent = name.charAt(0).toUpperCase() + name.slice(1);
+        }
+        
+        function logout() {
+            localStorage.removeItem('auth_token');
+            localStorage.removeItem('user_email');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

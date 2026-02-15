@@ -101,7 +101,6 @@ def train():
     # Train
     print("Training model...")
     mlr_model = LogisticRegression(
-        multi_class="multinomial",
         solver="lbfgs",
         max_iter=1000
     )

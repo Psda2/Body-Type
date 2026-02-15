@@ -1,17 +1,17 @@
 import json
 import os
-from google import genai
-from google.genai import types
+from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../.env"))
 
 # Configure Gemini
-API_KEY = os.getenv("GEMINI_API_KEY")
+# Configure OpenAI
+API_KEY = os.getenv("OPENAI_API_KEY")
 if API_KEY:
-    client = genai.Client(api_key=API_KEY)
+    client = OpenAI(api_key=API_KEY)
 else:
-    print("Warning: GEMINI_API_KEY not found in environment variables.")
+    print("Warning: OPENAI_API_KEY not found in environment variables.")
     client = None
 
 # Load KB
@@ -59,7 +59,7 @@ def retrieve_context(gender, bmi_category, somatotype):
 
 def generate_meal_plan(profile, plan_days=1):
     """
-    Generates a meal plan using Gemini based on the profile and retrieved context.
+    Generates a meal plan using OpenAI based on the profile and retrieved context.
     """
     gender = "female" if profile.get("gender") == 1 else "male"
     
@@ -70,40 +70,79 @@ def generate_meal_plan(profile, plan_days=1):
     context = retrieve_context(gender_str, bmi_category, somatotype)
     
     system_instruction = "You are a professional nutritionist and meal planner specializing in Sri Lankan cuisine."
+
+    # Shuffle options to ensure variety
+    import random
+    variation_seed = random.randint(1, 10000)
     
+    # helper to shuffle list efficiently
+    def shuffle_list(lst):
+        l = lst.copy()
+        random.shuffle(l)
+        return l
+
+    # Shuffle the context arrays before putting them in the prompt
+    shuffled_breakfast = shuffle_list(context['meal_options'].get('breakfast', []))
+    shuffled_lunch = shuffle_list(context['meal_options'].get('lunch', []))
+    shuffled_dinner = shuffle_list(context['meal_options'].get('dinner', []))
+    shuffled_snacks = shuffle_list(context['snacks'])
+    
+    # Select a subset to reduce token usage and force rotation (e.g., top 10 after shuffle)
+    # This ensures different runs see different "top" options
     user_content = f"""Create a {plan_days}-day meal plan for a user with the following profile:
     - Gender: {gender_str}
     - BMI Category: {bmi_category}
     - Somatotype: {somatotype}
     - Goal: {profile.get('goal', 'healthy living')}
     - Dietary Constraints: {profile.get('dietary_constraints', 'none')}
+    - Random Seed: {variation_seed}
     
-    Use the following retrieved options as the PRIMARY source for meals. You can mix and match.
+    INSTRUCTIONS FOR VARIETY:
+    1. You MUST generate a DIFFERENT plan than usual. 
+    2. Do NOT always pick the first option.
+    3. Rotate through the provided options randomly.
+    4. You can mix and match side dishes from different options to create new combinations.
     
-    Breakfast Options:
-    {json.dumps(context['meal_options'].get('breakfast', []), indent=2)}
+    Use the following retrieved options as the base ingredients. 
     
-    Lunch Options:
-    {json.dumps(context['meal_options'].get('lunch', []), indent=2)}
+    Breakfast Options (Randomized):
+    {json.dumps(shuffled_breakfast[:8], indent=2)} 
     
-    Dinner Options:
-    {json.dumps(context['meal_options'].get('dinner', []), indent=2)}
+    Lunch Options (Randomized):
+    {json.dumps(shuffled_lunch[:8], indent=2)}
     
-    Snack Options:
-    {json.dumps(context['snacks'], indent=2)}
+    Dinner Options (Randomized):
+    {json.dumps(shuffled_dinner[:8], indent=2)}
+    
+    Snack Options (Randomized):
+    {json.dumps(shuffled_snacks[:8], indent=2)}
     
     Specific Guidance for {somatotype}:
     {json.dumps(context['guidance'], indent=2)}
     
     OUTPUT FORMAT:
-    Return strictly valid JSON with the following structure:
+    Return strictly valid JSON with the following structure. 
+    IMPORTANT: Break down each meal into "item" (the food name) and "portion" (the quantity/details).
+    
     {{
         "meal_plan": {{
             "day_1": {{
-                "breakfast": {{ "main": "Option 1...", "alternative": "Option 2..." }},
-                "lunch": {{ "main": "Option 1...", "alternative": "Option 2..." }},
-                "dinner": {{ "main": "Option 1...", "alternative": "Option 2..." }},
-                "snacks": {{ "main": "Option 1...", "alternative": "Option 2..." }}
+                "breakfast": {{ 
+                    "main": {{ "item": "Dish Name", "portion": "e.g. Rice: ~200g; Dhal: ~100g" }},
+                    "alternative": {{ "item": "Dish Name", "portion": "details..." }}
+                }},
+                "lunch": {{ 
+                    "main": {{ "item": "Dish Name", "portion": "details..." }}, 
+                    "alternative": {{ "item": "Dish Name", "portion": "details..." }} 
+                }},
+                "dinner": {{ 
+                    "main": {{ "item": "Dish Name", "portion": "details..." }}, 
+                    "alternative": {{ "item": "Dish Name", "portion": "details..." }} 
+                }},
+                "snacks": {{ 
+                    "main": {{ "item": "Dish Name", "portion": "details..." }}, 
+                    "alternative": {{ "item": "Dish Name", "portion": "details..." }} 
+                }}
             }},
             ... (up to day_{plan_days})
         }},
@@ -116,15 +155,17 @@ def generate_meal_plan(profile, plan_days=1):
         import time
         for attempt in range(3):
             try:
-                response = client.models.generate_content(
-                    model='gemini-2.5-flash',
-                    config=types.GenerateContentConfig(
-                        system_instruction=system_instruction
-                    ),
-                    contents=user_content
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    temperature=0.7, # Increased temperature for variety
+                    messages=[
+                        {"role": "system", "content": system_instruction},
+                        {"role": "user", "content": user_content}
+                    ]
                 )
+                
                 # Clean up potential markdown code blocks
-                text = response.text.strip()
+                text = response.choices[0].message.content.strip()
                 if text.startswith("```json"):
                     text = text[7:]
                 if text.endswith("```"):
@@ -132,19 +173,20 @@ def generate_meal_plan(profile, plan_days=1):
                 return json.loads(text)
             except Exception as e:
                 error_str = str(e)
-                if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                print(f"DEBUG: OpenAI API Error: {error_str}") # Added for debugging
+                if "429" in error_str or "rate limit" in error_str.lower():
                     wait_time = 5 * (2 ** attempt)
-                    print(f"Gemini quota exceeded. Retrying in {wait_time} seconds...")
+                    print(f"OpenAI quota exceeded. Retrying in {wait_time} seconds...")
                     time.sleep(wait_time)
                 else:
-                    print(f"Error calling Gemini: {e}")
+                    print(f"Error calling OpenAI: {e}")
                     break
         
         print("All retries failed. Generating fallback plan locally.")
         return generate_fallback_plan(context, plan_days, somatotype)
     else:
         return {
-            "message": "Gemini API key not configured. Returning raw context.",
+            "message": "OpenAI API key not configured. Returning raw context.",
             "context": context
         }
 

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Type Analyzer - Login</title>
+    <link rel="stylesheet" href="modern.css" />
+    <style>
+      /* Login Page Specific Styles */
+      body {
+        background: linear-gradient(135deg, rgba(91, 103, 247, 0.1) 0%, rgba(123, 133, 255, 0.1) 100%),
+                    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%235B67F7" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: var(--spacing-lg);
+      }
+
+      .login-container {
+        width: 100%;
+        max-width: 480px;
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .app-logo {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto var(--spacing-md);
+        background: var(--gradient-blue);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        color: white;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .app-name {
+        font-size: var(--font-size-2xl);
+        font-weight: 700;
+        background: var(--gradient-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .app-tagline {
+        color: var(--text-secondary);
+        font-size: var(--font-size-base);
+      }
+
+      .login-card {
+        background: var(--card-white);
+        border-radius: var(--radius-xl);
+        padding: var(--spacing-2xl);
+        box-shadow: var(--shadow-xl);
+      }
+
+      .login-title {
+        font-size: var(--font-size-xl);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .login-subtitle {
+        text-align: center;
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .error-message {
+        background: #FFE5E5;
+        color: var(--alert-red);
+        padding: var(--spacing-md);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--spacing-md);
+        font-size: var(--font-size-sm);
+        text-align: center;
+      }
+
+      .forgot-password {
+        text-align: right;
+        margin-top: var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .forgot-password a {
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+      }
+
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+
+      .register-link {
+        text-align: center;
+        margin-top: var(--spacing-lg);
+        color: var(--text-secondary);
+      }
+
+      .register-link a {
+        color: var(--alert-red);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .register-link a:hover {
+        text-decoration: underline;
+      }
+
+      /* Icon styles */
+      .input-icon {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <!-- Logo & Branding -->
+      <div class="logo-section">
+        <div class="app-logo">🏃</div>
+        <h1 class="app-name">Body Type Analyzer</h1>
+        <p class="app-tagline">Know Your Body, Optimize Your Health</p>
+      </div>
+
+      <!-- Login Card -->
+      <div class="login-card">
+        <h2 class="login-title">Welcome</h2>
+        <p class="login-subtitle">Sign in to your account</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <div class="input-wrapper">
+              <span class="input-icon">✉️</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-field"
+                required
+                placeholder="Email"
+                value="test@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-wrapper">
+              <span class="input-icon">🔒</span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="input-field"
+                required
+                placeholder="Password"
+                value="password123"
+              />
+            </div>
+          </div>
+
+          <div class="forgot-password">
+            <a href="#" onclick="alert('Password reset not implemented yet'); return false;">Forget Password</a>
+          </div>
+
+          <div id="error" class="error-message" style="display: none"></div>
+
+          <button type="submit" class="btn btn-primary btn-large btn-block">
+            Sign In
+          </button>
+        </form>
+
+        <p class="register-link">
+          Don't have an account? <a href="#" onclick="alert('Registration not implemented yet'); return false;">Register Now</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          const errorDiv = document.getElementById("error");
+
+          try {
+            const response = await fetch("http://localhost:8001/token", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: new URLSearchParams({
+                username: email,
+                password: password,
+              }),
+            });
+
+            if (response.ok) {
+              const data = await response.json();
+              localStorage.setItem("auth_token", data.access_token);
+              localStorage.setItem("user_email", email);
+              window.location.href = "dashboard.html";
+            } else {
+              const error = await response.json();
+              errorDiv.textContent = error.detail || "Login failed";
+              errorDiv.style.display = "block";
+            }
+          } catch (error) {
+            errorDiv.textContent = "Network error: " + error.message;
+            errorDiv.style.display = "block";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -32,19 +32,11 @@ A full-stack application that predicts your body somatotype (Ectomorph, Mesomorp
     cd Body-Type
     ```
 
-2.  **Create a virtual environment (optional but recommended):**
+2.  **Run the Setup Script:**
+    This script will create a virtual environment, install all dependencies (Python & Node.js), and help you configure your `.env` file.
 
     ```bash
-    python -m venv venv
-    # Windows
-    venv\Scripts\activate
-    # macOS/Linux
-    source venv/bin/activate
-    ```
-
-3.  **Install backend dependencies:**
-    ```bash
-    pip install -r requirements.txt
+    setup.bat
     ```
 
 ## Running the Application

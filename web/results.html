@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Body Type Analyzer</title>
+    <link rel="stylesheet" href="modern.css">
+    <style>
+        body {
+            padding-bottom: 100px;
+        }
+
+        .results-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .next-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+
+        .next-step-card {
+            background: var(--card-white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            color: inherit;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .next-step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .next-step-icon {
+            font-size: 32px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .next-step-title {
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .next-steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="results-container">
+        <div class="page-header">
+            <h1>Your Results</h1>
+            <p style="color: var(--text-secondary);">Analysis complete!</p>
+        </div>
+
+        <!-- BMI Card -->
+        <div class="bmi-card">
+            <h3>Body Mass Index (BMI)</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="text-align: left;">
+                    <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: 4px;">Your BMI</p>
+                    <div class="bmi-value" id="bmiValue">--</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="health-icon">💚</div>
+                </div>
+            </div>
+            <div class="health-status">
+                <div class="health-status-text" id="bmiCategory">--</div>
+            </div>
+        </div>
+
+        <!-- Body Type Card -->
+        <div class="card" style="margin-top: var(--spacing-lg); text-align: center;">
+            <h3 style="color: var(--text-secondary); font-size: var(--font-size-base); margin-bottom: var(--spacing-sm);">Your Body Type</h3>
+            <div style="font-size: var(--font-size-3xl); font-weight: 700; color: var(--primary-blue); margin: var(--spacing-md) 0;" id="somatotype">
+                --
+            </div>
+            <p style="color: var(--text-secondary); font-size: var(--font-size-sm);" id="bodyTypeDescription">
+                Loading your results...
+            </p>
+        </div>
+
+        <!-- Features Used -->
+        <div class="card" style="margin-top: var(--spacing-lg);" id="featuresCard">
+            <h3 style="margin-bottom: var(--spacing-md);">Analysis Details</h3>
+            <div id="featuresContent" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-sm);">
+                <!-- Features will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div style="margin-top: var(--spacing-xl);">
+            <h3 style="text-align: center; margin-bottom: var(--spacing-lg);">What's Next?</h3>
+            <div class="next-steps-grid">
+                <a href="chat.html" class="next-step-card">
+                    <div class="next-step-icon">💬</div>
+                    <div class="next-step-title">Chat with AI</div>
+                </a>
+                <a href="#" onclick="alert('Meal plans coming soon!'); return false;" class="next-step-card">
+                    <div class="next-step-icon">🍽️</div>
+                    <div class="next-step-title">View Meal Plan</div>
+                </a>
+                <a href="#" onclick="alert('Exercises coming soon!'); return false;" class="next-step-card">
+                    <div class="next-step-icon">🏋️</div>
+                    <div class="next-step-title">Start Exercises</div>
+                </a>
+                <a href="dashboard.html" class="next-step-card">
+                    <div class="next-step-icon">🏠</div>
+                    <div class="next-step-title">Dashboard</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="#" onclick="alert('Meal Plans coming soon!'); return false;" class="nav-item">
+                <div class="nav-icon">🍽️</div>
+                <div class="nav-label">Meal Plans</div>
+            </a>
+            <a href="dashboard.html" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <div class="nav-label">Profile</div>
+            </a>
+            <a href="body-analysis.html" class="nav-item">
+                <div class="nav-icon">📊</div>
+                <div class="nav-label">Analysis</div>
+            </a>
+            <a href="chat.html" class="nav-item">
+                <div class="nav-icon">💬</div>
+                <div class="nav-label">Chat</div>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        if (!localStorage.getItem('auth_token')) {
+            window.location.href = 'index.html';
+        }
+        
+        const result = JSON.parse(localStorage.getItem('analysis_result') || '{}');
+        
+        if (result.somatotype) {
+            // Set BMI
+            document.getElementById('bmiValue').textContent = result.bmi || '--';
+            document.getElementById('bmiCategory').textContent = (result.bmi_category || 'normal').replace('_', ' ');
+            
+            // Set color based on BMI category
+            const categoryElement = document.getElementById('bmiCategory');
+            if (result.bmi_category === 'normal') {
+                categoryElement.style.color = 'var(--cyan-accent)';
+            } else if (result.bmi_category === 'underweight' || result.bmi_category === 'overweight') {
+                categoryElement.style.color = '#FFA500';
+            } else {
+                categoryElement.style.color = 'var(--alert-red)';
+            }
+            
+            // Set Body Type
+            document.getElementById('somatotype').textContent = result.somatotype;
+            
+            // Set description based on body type
+            const descriptions = {
+                'Ectomorph': 'Naturally lean with a fast metabolism. Focus on strength training and calorie-dense nutrition.',
+                'Mesomorph': 'Athletic build with good muscle development. Balanced training and nutrition work best.',
+                'Endomorph': 'Naturally higher body fat percentage. Focus on cardio and portion control.'
+            };
+            document.getElementById('bodyTypeDescription').textContent = descriptions[result.somatotype] || 'Your unique body type analysis is complete.';
+            
+            // Display features
+            if (result.features_used) {
+                const featuresContent = document.getElementById('featuresContent');
+                featuresContent.innerHTML = '';
+                
+                for (const [key, value] of Object.entries(result.features_used)) {
+                    const featureDiv = document.createElement('div');
+                    featureDiv.style.cssText = 'padding: var(--spacing-sm); background: var(--background-gray); border-radius: var(--radius-md);';
+                    featureDiv.innerHTML = `
+                        <div style="font-size: var(--font-size-xs); color: var(--text-secondary);">${key.replace(/([A-Z])/g, ' $1').trim()}</div>
+                        <div style="font-weight: 700; color: var(--primary-blue);">${typeof value === 'number' ? value.toFixed(2) : value}</div>
+                    `;
+                    featuresContent.appendChild(featureDiv);
+                }
+            }
+        } else {
+            document.getElementById('somatotype').textContent = 'No Results';
+            document.getElementById('bodyTypeDescription').textContent = 'No analysis results available. Please complete the body analysis first.';
+            document.getElementById('featuresCard').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
