@@ -23,12 +23,12 @@ goto :start_services
 
 :no_venv
 echo Attempting to start with global Python...
-py -3.12 -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 
 :start_services
 echo.
 echo Starting Backend Server...
-start "Backend Server" cmd /k "py -3.12 -m uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload"
+start "Backend Server" cmd /k "python -m uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload"
 
 echo Starting Mobile App...
 start "Mobile App" cmd /k "cd mobile-app-new && npx expo start"

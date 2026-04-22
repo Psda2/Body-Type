@@ -37,10 +37,10 @@ echo .venv already exists and is working.
 goto :install_backend
 
 :create_venv
-echo Creating virtual environment using py -3.12...
-py -3.12 -m venv .venv
+echo Creating virtual environment...
+py -m venv .venv
 if errorlevel 1 (
-    echo [WARNING] py -3.12 failed. Trying default 'python'...
+    echo [WARNING] py launcher failed. Trying 'python'...
     python -m venv .venv
 )
 
