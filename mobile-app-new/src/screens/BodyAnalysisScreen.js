@@ -64,7 +64,7 @@ const BodyAnalysisScreen = ({ navigation }) => {
     try {
       // Get gender and other profile info from storage
       const profileData = await getProfileData();
-      const currentGender = profileData?.gender || 'female';
+      const currentGender = (profileData?.gender === 'male' || profileData?.gender === 0 || profileData?.gender === '0') ? 'male' : 'female';
 
       const measurements = {
         gender: currentGender,
@@ -151,29 +151,33 @@ const BodyAnalysisScreen = ({ navigation }) => {
 
             {renderInput('Wrist (cm)', '⌚', wrist, setWrist, 'e.g. 17')}
 
-            {isEditing ? (
-              <TouchableOpacity
-                style={[styles.analyzeButton, loading && styles.buttonDisabled]}
-                onPress={handleAnalyze}
-                disabled={loading}
-                activeOpacity={0.8}
-              >
-                <Text style={styles.analyzeButtonText}>
-                  {loading ? 'Analyzing...' : 'Analyze My Body Type'}
-                </Text>
-              </TouchableOpacity>
-            ) : (
-              <TouchableOpacity
-                style={styles.editButton}
-                onPress={() => setIsEditing(true)}
-                activeOpacity={0.8}
-              >
-                <Ionicons name="create-outline" size={20} color={colors.primaryGreen} style={{ marginRight: 8 }} />
-                <Text style={styles.editButtonText}>Edit Your Data</Text>
-              </TouchableOpacity>
-            )}
           </View>
         </ScrollView>
+
+        {/* Fixed Bottom Button Container */}
+        <View style={styles.bottomButtonContainer}>
+          {isEditing ? (
+            <TouchableOpacity
+              style={[styles.analyzeButton, loading && styles.buttonDisabled]}
+              onPress={handleAnalyze}
+              disabled={loading}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.analyzeButtonText}>
+                {loading ? 'Analyzing...' : 'Analyze My Body Type'}
+              </Text>
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity
+              style={styles.editButton}
+              onPress={() => setIsEditing(true)}
+              activeOpacity={0.8}
+            >
+              <Ionicons name="create-outline" size={20} color={colors.primaryGreen} style={{ marginRight: 8 }} />
+              <Text style={styles.editButtonText}>Edit Your Data</Text>
+            </TouchableOpacity>
+          )}
+        </View>
 
         <LoadingOverlay visible={loading} message="Analyzing measurements..." />
       </KeyboardAvoidingView>
@@ -239,7 +243,7 @@ const styles = StyleSheet.create({
     ...shadows.md,
   },
   inputGroup: {
-    marginBottom: spacing.md,
+    marginBottom: spacing.lg,
   },
   inputLabel: {
     fontSize: typography.sm,
@@ -284,7 +288,6 @@ const styles = StyleSheet.create({
     paddingVertical: 18,
     borderRadius: borderRadius.pill,
     alignItems: 'center',
-    marginTop: spacing.xl,
     ...shadows.md,
   },
   editButton: {
@@ -292,11 +295,15 @@ const styles = StyleSheet.create({
     paddingVertical: 18,
     borderRadius: borderRadius.pill,
     alignItems: 'center',
-    marginTop: spacing.xl,
     flexDirection: 'row',
     justifyContent: 'center',
     borderWidth: 1,
     borderColor: colors.primaryGreen,
+  },
+  bottomButtonContainer: {
+    padding: spacing.lg,
+    paddingBottom: Platform.OS === 'ios' ? 14 : 20, // Increased by 10px for better clearance
+    backgroundColor: colors.backgroundCream,
   },
   buttonDisabled: {
     opacity: 0.7,

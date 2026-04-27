@@ -28,7 +28,7 @@ py -m pip install -r requirements.txt
 :start_services
 echo.
 echo Starting Backend Server...
-start "Backend Server" cmd /k "python -m uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload"
+start "Backend Server" cmd /k ".venv\Scripts\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload"
 
 echo Starting Mobile App...
 start "Mobile App" cmd /k "cd mobile-app-new && npx expo start"

@@ -28,8 +28,8 @@ const ChatScreen = () => {
   const [initialLoading, setInitialLoading] = useState(true);
   const flatListRef = useRef(null);
   
-  // Tab bar height buffer
-  const tabBarHeight = Platform.OS === 'ios' ? 95 : 75;
+  // Tab bar height buffer (increased for better clearance)
+  const tabBarHeight = 10;
   
   const loadHistory = async () => {
     try {
@@ -134,8 +134,12 @@ const ChatScreen = () => {
             contentContainerStyle={styles.messagesList}
             onContentSizeChange={() => flatListRef.current?.scrollToEnd({ animated: true })}
             showsVerticalScrollIndicator={false}
+            keyboardDismissMode={Platform.OS === 'ios' ? 'interactive' : 'on-drag'}
+            keyboardShouldPersistTaps="handled"
+            style={{ flex: 1 }}
           />
         )}
+
 
         {loading && (
           <View style={styles.typingIndicator}>
@@ -248,7 +252,8 @@ const styles = StyleSheet.create({
   inputArea: {
     flexDirection: 'row',
     paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
+    paddingTop: spacing.sm,
+    paddingBottom: 4, // Reduced bottom padding
     alignItems: 'flex-end',
     backgroundColor: 'transparent',
   },

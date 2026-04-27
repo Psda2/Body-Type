@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Depends, status
+from fastapi import FastAPI, HTTPException, Depends, status, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordRequestForm
 from datetime import timedelta
@@ -249,6 +249,48 @@ async def get_chat_history_endpoint(current_user: UserInDB = Depends(get_current
         return {"history": history}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/food/analyze")
+async def analyze_food_plate(
+    file: UploadFile = File(...),
+    current_user: UserInDB = Depends(get_current_user)
+):
+    """
+    Upload a photo of a Sri Lankan food plate.
+    Returns detected foods, individual calorie estimates, and a total calorie count.
+    Accepts: JPEG, PNG, WEBP
+    """
+    try:
+        from .services.food_detector import detect_and_estimate_calories
+
+        # Validate file type
+        if file.content_type not in ("image/jpeg", "image/png", "image/webp", "image/jpg"):
+            raise HTTPException(
+                status_code=400,
+                detail=f"Unsupported file type: {file.content_type}. Use JPEG, PNG or WEBP."
+            )
+
+        image_bytes = await file.read()
+        result = detect_and_estimate_calories(image_bytes)
+        return result
+
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=503, detail=str(e))
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/food/status")
+def food_model_status(current_user: UserInDB = Depends(get_current_user)):
+    """Check whether the YOLO food model weights are loaded and ready."""
+    from .services.food_detector import is_model_ready, MODEL_PATH
+    return {
+        "model_ready": is_model_ready(),
+        "model_path":  str(MODEL_PATH),
+    }
+
 
 @app.post("/documents/ingest")
 def ingest_documents_endpoint(current_user: UserInDB = Depends(get_current_user)):

@@ -6,7 +6,8 @@ import { getAuthToken } from '../utils/storage';
 // For iOS simulator: http://localhost:8001
 // For physical device: http://YOUR_COMPUTER_IP:8001
 // Replace with your machine's IP if testing on physical device
-const BASE_URL = 'http://192.168.8.167:8001'; // Updated to match current network IP
+const BASE_URL = 'http://192.168.1.20:8001'; // Direct local IP (Most stable if on same Wi-Fi)
+export const API_URL = BASE_URL; // exported for use in FoodScanScreen & others
 
 // Create axios instance
 const api = axios.create({
@@ -123,5 +124,14 @@ export const tipsAPI = {
     return response.data;
   },
 };
+
+export const foodAPI = {
+  // Check if model is ready
+  status: async () => {
+    const response = await api.get('/food/status');
+    return response.data;
+  },
+};
+
 
 export default api;

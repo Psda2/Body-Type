@@ -320,7 +320,7 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.statsTitle}>BMI Trend</Text>
             <LineChart
               data={chartData}
-              width={Dimensions.get('window').width - 64} // Container padding adjustment
+              width={Dimensions.get('window').width - 40} // Wider to allow for negative margin shift
               height={220}
               yAxisSuffix=""
               yAxisInterval={1}
@@ -328,6 +328,8 @@ const HomeScreen = ({ navigation }) => {
                 backgroundColor: colors.cardWhite,
                 backgroundGradientFrom: colors.cardWhite,
                 backgroundGradientTo: colors.cardWhite,
+                backgroundGradientFromOpacity: 0,
+                backgroundGradientToOpacity: 0,
                 decimalPlaces: 1,
                 color: (opacity = 1) => `rgba(27, 94, 32, ${opacity})`,
                 labelColor: (opacity = 1) => `rgba(123, 111, 114, ${opacity})`,
@@ -342,8 +344,10 @@ const HomeScreen = ({ navigation }) => {
               }}
               bezier
               style={{
-                marginVertical: 8,
-                borderRadius: 16
+                marginTop: 8,
+                marginBottom: 0,
+                borderRadius: 16,
+                marginLeft: -45, // More aggressive shift to the left to align the chart "ink"
               }}
             />
           </View>
@@ -387,13 +391,13 @@ const HomeScreen = ({ navigation }) => {
 
           <TouchableOpacity
             style={[styles.actionCard, { backgroundColor: '#FBE9E7' }]}
-            onPress={() => navigation.navigate('History')}
+            onPress={() => navigation.navigate('MainApp', { screen: 'FoodScan' })}
             activeOpacity={0.8}
           >
             <View style={[styles.actionIcon, { backgroundColor: '#FF7043' }]}>
-              <Ionicons name="time" size={28} color={colors.textWhite} />
+              <Ionicons name="camera" size={28} color={colors.textWhite} />
             </View>
-            <Text style={styles.actionTitle}>My{'\n'}History</Text>
+            <Text style={styles.actionTitle}>Food{'\n'}Scan</Text>
           </TouchableOpacity>
         </View>
 
@@ -525,6 +529,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardWhite,
     borderRadius: borderRadius.xl,
     padding: spacing.lg,
+    paddingBottom: spacing.xs, // Reduced bottom padding
     marginBottom: spacing.xl,
     ...shadows.md,
     alignItems: 'center',

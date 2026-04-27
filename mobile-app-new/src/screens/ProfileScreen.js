@@ -50,7 +50,7 @@ const ProfileScreen = ({ navigation }) => {
           const syncedProfile = {
             ...profile,
             age: remoteUser.age || profile?.age || 0,
-            gender: remoteUser.gender || profile?.gender || 'female',
+            gender: (remoteUser.gender === 'male' || remoteUser.gender === 0 || remoteUser.gender === '0') ? 'male' : (remoteUser.gender === 'female' || remoteUser.gender === 1 || remoteUser.gender === '1') ? 'female' : (profile?.gender || 'female'),
             lifestyle: remoteUser.lifestyle || profile?.lifestyle || 'Moderately Active',
             fitness_level: remoteUser.fitness_level || profile?.fitness_level || 'Beginner',
             goal: remoteUser.goal || profile?.goal || 'Healthy Living',
@@ -64,6 +64,9 @@ const ProfileScreen = ({ navigation }) => {
 
       if (profile) {
         setProfileData(profile);
+        // Ensure metrics gender matches profile gender immediately
+        const standardizedGender = (profile.gender === 'male' || profile.gender === 0 || profile.gender === '0') ? 'male' : 'female';
+        setMetrics(prev => ({ ...prev, gender: standardizedGender }));
       }
 
       // Try API first
@@ -76,7 +79,7 @@ const ProfileScreen = ({ navigation }) => {
           bodyType: latest.somatotype || latest.body_type || '--',
           weight: latest.weight_kg || 0,
           height: latest.height_cm || 0,
-          gender: latest.gender || 'female',
+          gender: (latest.gender === 'male' || latest.gender === 0 || latest.gender === '0') ? 'male' : 'female',
         });
       } else {
         // Fallback to local storage
@@ -89,7 +92,7 @@ const ProfileScreen = ({ navigation }) => {
             bodyType: '--',
             weight: userData.weight_kg || 0,
             height: userData.height_cm || 0,
-            gender: (userData.gender === 'female' || userData.gender === 1) ? 'female' : 'male',
+            gender: (userData.gender === 'female' || userData.gender === 1 || userData.gender === '1') ? 'female' : 'male',
           });
         }
       }

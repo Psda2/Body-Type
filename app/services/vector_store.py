@@ -1,6 +1,11 @@
 import os
 import shutil
+import logging
+from transformers import logging as transformers_logging
 from typing import List
+
+# Suppress harmless BERT model loading warnings
+transformers_logging.set_verbosity_error()
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings

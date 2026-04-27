@@ -19,7 +19,7 @@ const OnboardingModal = ({ visible, onComplete, onSkip, initialData = {} }) => {
   const [step, setStep] = useState(0);
   const [data, setData] = useState({
     age: initialData.age ? initialData.age.toString() : '',
-    gender: initialData.gender || 'female',
+    gender: (initialData.gender === 'male' || initialData.gender === 0 || initialData.gender === '0') ? 'male' : 'female',
     lifestyle: initialData.lifestyle || 'Moderately Active',
     fitness_level: initialData.fitness_level || 'Beginner',
     goal: initialData.goal || 'Healthy Living',
